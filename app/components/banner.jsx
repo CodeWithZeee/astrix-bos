@@ -8,7 +8,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const Banner = () => {
   return (
     <MaxWidthWrapper>
-      <div className="flex items-center justify-center my-20 relative">
+      <div className="flex items-center justify-center my-44 relative">
         <div className="centerAbsolute hidden md:flex"></div>
         {/* Left Text */}
         <motion.div className="z-0 ml-10  relative">

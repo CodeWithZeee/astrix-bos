@@ -10,7 +10,7 @@ const Navbar = () => {
     { href: "/services", label: "Services" },
   ];
   return (
-    <section className="">
+    <section className="fixed w-full z-[999] top-0 bg-[#0b0f17]">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
