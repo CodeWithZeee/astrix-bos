@@ -1,5 +1,5 @@
 import "./globals.css";
-import { NohaSection } from "./components/noha-section";
+import { NovaSection } from "./components/Nova-section";
 import {
   AlertTriangle,
   Phone,
@@ -243,8 +243,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Add NohaSection */}
-      <NohaSection />
+      {/* Add NovaSection */}
+      <NovaSection />
 
       <SaxSection />
     </div>

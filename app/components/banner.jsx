@@ -44,9 +44,9 @@ const Banner = () => {
           animate={{ y: 0, opacity: 1 }}
           className="z-10"
         >
-          {/* Noha Image */}
+          {/* Nova Image */}
           <div className="flex items-center justify-center relative w-[200px] h-[300px] mr-12 md:w-[300px] md:h-[450px]">
-            <Image src={"/Noha.png"} alt="Noha" fill />
+            <Image src={"/Nova.png"} alt="Nova" fill />
           </div>
         </motion.div>
         {/* Right Text */}
@@ -65,7 +65,7 @@ const Banner = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5, ease: "easeOut" }}
             >
-              H
+              V
             </motion.div>
             <motion.div
               className="hidden md:flex"

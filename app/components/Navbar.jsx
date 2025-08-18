@@ -11,8 +11,10 @@ const Navbar = () => {
   ];
   return (
     <section className="fixed w-full z-[999] top-0 bg-[#0b0f17]">
+      {/* Gradient overlay on top */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1E263A] via-[#1E263A]/70 to-transparent h-3/4 pointer-events-none"></div>
       <MaxWidthWrapper>
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
           <div className="">
             <Image src="/logo.png" alt="Logo" width={50} height={50} />

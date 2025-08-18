@@ -57,14 +57,14 @@ const features = [
   },
 ];
 
-export function NohaSection() {
+export function NovaSection() {
   return (
     <section className="py-24 px-4" style={{ backgroundColor: "#0b0f17" }}>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Meet Noha: Your AI Co-Pilot
+            Meet Nova: Your AI Co-Pilot
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
             Not a bot. Not just a tool. Your true second-in-command.
@@ -101,7 +101,7 @@ export function NohaSection() {
         {/* Bottom Message */}
         <div className="text-center">
           <p className="text-lg text-white font-medium mb-8">
-            With Noha, your business doesn't just run smoother — it runs itself.
+            With Nova, your business doesn't just run smoother — it runs itself.
           </p>
           <Link
             href="/get-started"
@@ -112,7 +112,7 @@ export function NohaSection() {
               })
             )}
           >
-            Get Started with Noha
+            Get Started with Nova
           </Link>
         </div>
       </div>
