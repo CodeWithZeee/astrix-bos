@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <section className="">
       <MaxWidthWrapper>
-        <div className="hidden xl:flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="">
             <Image src="/logo.png" alt="Logo" width={50} height={50} />
