@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navbar = () => {
   const links = [
     { href: "/", label: "Home" },
+    { href: "/contact", label: "Contact us" },
     { href: "/about", label: "About" },
-    { href: "/products", label: "Products" },
     { href: "/services", label: "Services" },
   ];
   return (

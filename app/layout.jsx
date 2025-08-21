@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import LoadingWrapper from "./components/LoadingWrapper";
+import { LoadingProvider } from "./components/LoadingContext";
 // import "./Section1.css";
 import { Montserrat, Poiret_One } from "next/font/google";
 
@@ -24,10 +26,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${poiretOne.variable}`}>
       <body className={"antialiased overflow-x-hidden"}>
-        <header>
-          <Navbar />
-        </header>
-        <main>{children}</main>
+        <LoadingProvider>
+          <LoadingWrapper>
+            <header>
+              <Navbar />
+            </header>
+            <main>{children}</main>
+          </LoadingWrapper>
+        </LoadingProvider>
       </body>
     </html>
   );
