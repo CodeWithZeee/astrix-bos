@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import LoadingWrapper from "./components/LoadingWrapper";
 import { LoadingProvider } from "./components/LoadingContext";
-// import "./Section1.css";
 
 export const metadata = {
   title: "Astrix AI BOS",

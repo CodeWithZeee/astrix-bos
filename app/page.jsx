@@ -27,7 +27,6 @@ import Problems from "./components/Problems";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Landingpage />
       {/* Add NohaSection */}
       <RevealAnimation delay={0.1}>
