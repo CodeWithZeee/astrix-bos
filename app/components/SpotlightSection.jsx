@@ -73,7 +73,7 @@ const SpotlightSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-[#0b0f17]">
+    <section className="py-20 px-4 relative overflow-hidden bg-[#000000]">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5"></div>
       <div className="absolute top-32 right-20 w-40 h-40 bg-purple-500/5 rounded-full blur-3xl animate-float"></div>

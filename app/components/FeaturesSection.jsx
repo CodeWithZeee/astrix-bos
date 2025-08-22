@@ -42,9 +42,9 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-[#0b0f17]">
+    <section className="py-20 px-4 relative overflow-hidden bg-[#000000]">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5"></div>
+      <div className="absolute inset-0 bg-black"></div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl animate-float"></div>
       <div
         className="absolute bottom-20 right-10 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-float"
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 glass-card subtle-glow text-blue-400 px-6 py-3 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 glass-card subtle-glow text-[#39FF14] px-6 py-3 rounded-full text-sm font-medium mb-6">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -68,7 +68,7 @@ const FeaturesSection = () => {
             </svg>
           </div>
           <h2 className="text-6xl font-bold text-white mb-6 leading-tight">
-            Powerful Features
+            MEET <span className="text-[#39FF14]">NOHA</span>: Your AI Co-Pilot
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
             Discover how Noha's intelligent features transform your business

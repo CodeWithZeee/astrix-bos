@@ -7,12 +7,9 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "/contact", label: "Contact us" },
     { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
   ];
   return (
-    <section className="fixed w-full z-[999] top-0 bg-[#0b0f17]">
-      {/* Gradient overlay on top */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1E263A] via-[#1E263A]/70 to-transparent h-3/4 pointer-events-none"></div>
+    <section className="fixed w-full h-16 z-[999] top-0 bg-[#000000] Major-mono font-extrabold  ">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
@@ -20,20 +17,18 @@ const Navbar = () => {
             <Image src="/logo.png" alt="Logo" width={50} height={50} />
           </div>
           {/* Links */}
-          <div className="flex space-x-10">
+          <div className="flex gap-28">
             {links.map((link) => (
               <div key={link.href} className="navLinks relative group">
                 <Link href={link.href} className="">
                   {link.label}
                 </Link>
-                <div className="absolute h-[1px] bg-white bottom-0 group-hover:w-[80%] w-0 transition-all duration-300" />
+                <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />
               </div>
             ))}
           </div>
-          {/* Button */}
-          <div>
-            <button className="btn">Sign In</button>
-          </div>
+          {/* For space */}
+          <div></div>
         </div>
       </MaxWidthWrapper>
     </section>

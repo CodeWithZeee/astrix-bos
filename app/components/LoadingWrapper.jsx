@@ -4,7 +4,9 @@ import LoadingScreen from "./LoadingScreen";
 import { useLoading } from "./LoadingContext";
 
 const LoadingWrapper = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(
+    document.readyState !== "complete"
+  );
   const { handleLoadingComplete } = useLoading();
 
   const onLoadingComplete = () => {
@@ -12,18 +14,22 @@ const LoadingWrapper = ({ children }) => {
     handleLoadingComplete(); // Notify the context
   };
 
-  // Also hide loading screen when window loads (for additional safety)
   useEffect(() => {
-    const handleLoad = () => {
-      // Add a minimum loading time even if page loads quickly
-      setTimeout(() => {
-        onLoadingComplete();
-      }, 2000); // Minimum 2 seconds
-    };
-
     if (document.readyState === "complete") {
-      handleLoad();
+      // Page already loaded, show loader for 1 more second
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+        handleLoadingComplete();
+      }, 1000);
+      return () => clearTimeout(timer);
     } else {
+      const handleLoad = () => {
+        // Page just finished loading, show loader for 1 more second
+        setTimeout(() => {
+          setIsLoading(false);
+          handleLoadingComplete();
+        }, 1000);
+      };
       window.addEventListener("load", handleLoad);
       return () => window.removeEventListener("load", handleLoad);
     }

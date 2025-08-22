@@ -64,7 +64,7 @@ const Section3 = () => {
   };
 
   return (
-    <div className="bg-[#0b0f17] min-h-screen">
+    <div className="bg-[#000000] min-h-screen">
       <div className="max-w-[1142px] mx-auto px-4 lg:px-0">
         {/* Heading */}
         <div className="text-center py-16">

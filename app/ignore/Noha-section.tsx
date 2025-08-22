@@ -1,5 +1,5 @@
-import { Card, CardContent } from "./ui/card";
-import { Button, buttonVariants } from "./ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Button, buttonVariants } from "../components/ui/button";
 import {
   Bell,
   Compass,
@@ -59,7 +59,7 @@ const features = [
 
 export function NohaSection() {
   return (
-    <section className="py-24 px-4" style={{ backgroundColor: "#0b0f17" }}>
+    <section className="py-24 px-4" style={{ backgroundColor: "#000000" }}>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -103,9 +103,10 @@ export function NohaSection() {
           <Link
             href="/"
             className={cn(
-              "bg-white text-[#0b0f17] hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300", buttonVariants({
+              "bg-white text-[#000000] hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300",
+              buttonVariants({
                 variant: "default",
-                size: "lg"
+                size: "lg",
               })
             )}
           >

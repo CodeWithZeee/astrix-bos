@@ -3,12 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import RevealAnimation from "./RevealAnimation";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import RevealAnimation from "../components/RevealAnimation";
 
-const Banner = () => {
+const OldBanner = () => {
   return (
-    <MaxWidthWrapper>
+    
       <div className="flex items-center justify-center my-44 relative">
         <div className="centerAbsolute hidden md:flex"></div>
 
@@ -88,8 +88,7 @@ const Banner = () => {
           </motion.div>
         </RevealAnimation>
       </div>
-    </MaxWidthWrapper>
   );
 };
 
-export default Banner;
+export default OldBanner;
