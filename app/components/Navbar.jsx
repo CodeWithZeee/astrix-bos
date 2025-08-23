@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
           <div className="">
-            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <Image src="/logo.png" alt="Logo"  width={50} height={50} />
           </div>
           {/* Links */}
           <div className="flex gap-28">

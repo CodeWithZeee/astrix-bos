@@ -6,19 +6,19 @@ const FeaturesSection = () => {
     {
       title: "Daily Briefing",
       description:
-        "Overnight summary of tasks, leads, and messages to start your day informed and ready.",
+        "Start every morning with a personalized AI-curated snapshot of your business. The agent compiles open tasks, new leads, pending follow-ups, and key messages from the previous day, so you wake up fully informed and ready to prioritize without digging through emails or dashboards.",
       link: "#ai-voice",
     },
     {
-      title: "Automated Follow-ups",
+      title: "Smart Suggestions",
       description:
-        "Transform your sales process with automated follow-up sequences that nurture leads, schedule appointments, and update your pipeline without manual intervention.",
-      link: "#follow-ups",
+        "The AI doesn’t just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
+      link: "",
     },
     {
-      title: "Smart Pipeline Management",
+      title: "Calendar & Task Management",
       description:
-        "Get real-time insights into your sales pipeline with intelligent tracking, automated updates, and predictive analytics to help you close more deals.",
+        "Forget manual scheduling chaos. The agent integrates directly with your calendar, automatically booking meetings, rescheduling conflicts, and updating tasks in real time. It works across teams, so everyone stays aligned without back-and-forth emails.",
       link: "#pipeline",
     },
     {

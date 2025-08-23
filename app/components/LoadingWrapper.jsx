@@ -1,12 +1,11 @@
+
 "use client";
 import { useState, useEffect } from "react";
 import LoadingScreen from "./LoadingScreen";
 import { useLoading } from "./LoadingContext";
 
 const LoadingWrapper = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(
-    document.readyState !== "complete"
-  );
+  const [isLoading, setIsLoading] = useState(true);
   const { handleLoadingComplete } = useLoading();
 
   const onLoadingComplete = () => {
