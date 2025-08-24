@@ -96,16 +96,13 @@ body {
   font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
-}
-
 h1,
 h2 {
   font-family: "Mokoto", sans-serif;
+}
+
+p{
+  font-family: "Space Grotesk", sans-serif;
 }
 
 @layer base {
@@ -126,6 +123,13 @@ h2 {
   }
 }
 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
 /* Loading Screen Animations */
 @keyframes blink {
   0% {

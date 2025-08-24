@@ -16,26 +16,38 @@ import {
   Sparkles,
   Bot,
 } from "lucide-react";
-import Section3 from "./components/Section3";
+// import Section3 from "./ignore/Section3";
 import FeaturesSection from "./components/FeaturesSection";
+import HNW from "./components/HNW"
 import SpotlightSection from "./components/SpotlightSection";
 import RevealAnimation from "./components/RevealAnimation";
 import { FinalCTASection } from "./components/final-cta-section";
 import Landingpage from "./components/Landingpage";
 import Problems from "./components/Problems";
+import NS from "./components/NS"
+import WNH from './components/WNH'
 
 export default function Home() {
   return (
     <>
-      <Landingpage />
-      {/* Add NohaSection */}
       <RevealAnimation delay={0.1}>
-        <Problems />
+      <Landingpage />
+        {/* <Problems /> */}
       </RevealAnimation>
 
       {/* Features Section with Card Hover Effect */}
       <RevealAnimation delay={0.1}>
         <FeaturesSection />
+      </RevealAnimation>
+
+      {/* HNW Section with Lottie Animation */}
+      <RevealAnimation delay={0.1}>
+        <HNW />
+      </RevealAnimation>
+
+      {/* Noha's Solution Section */}
+      <RevealAnimation delay={0.1}>
+        <NS />
       </RevealAnimation>
 
       {/* Spotlight Section with Card Spotlight Effect */}
@@ -44,7 +56,7 @@ export default function Home() {
       </RevealAnimation>
 
       <RevealAnimation delay={0.1}>
-        <Section3 />
+        <WNH />
       </RevealAnimation>
 
       <FinalCTASection />

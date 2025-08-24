@@ -13,7 +13,7 @@ const FeaturesSection = () => {
       title: "Smart Suggestions",
       description:
         "The AI doesn’t just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
-      link: "",
+      link: "/",
     },
     {
       title: "Calendar & Task Management",
@@ -22,22 +22,34 @@ const FeaturesSection = () => {
       link: "#pipeline",
     },
     {
-      title: "24/7 Customer Support",
+      title: "Business Snapshot",
       description:
-        "Provide round-the-clock customer support with AI-powered responses that understand context, resolve common issues, and escalate complex problems to your team.",
+        "Need a quick update? Just ask. The AI delivers live metrics—revenue, pipeline progress, support tickets, or project KPIs—through text or voice. It transforms complex dashboards into instant insights, keeping leadership and teams on the same page anytime, anywhere.",
       link: "#support",
     },
     {
-      title: "Lead Qualification",
+      title: "Contextual Recall",
       description:
-        "Automatically qualify and score leads based on your criteria, ensuring your sales team focuses on the most promising opportunities.",
+        "No more searching through logs. The AI remembers context, so you can ask natural questions like “What was discussed in Tuesday’s call?” or “Show me the contract update from last week,” and it instantly retrieves the right information, saving hours of digging.",
       link: "#lead-qualification",
     },
     {
-      title: "Intelligent Scheduling",
+      title: "Voice Command Ready",
       description:
-        "Streamline appointment booking with smart scheduling that considers availability, preferences, and automatically sends confirmations and reminders.",
-      link: "#scheduling",
+        "Whether you’re commuting, multitasking, or in the field, control your operations with simple voice commands. From creating tasks to pulling reports, the AI executes your requests instantly, making true hands-free business management a reality.",
+      link: "#x",
+    },
+    {
+      title: "Lead Monitor",
+      description:
+        "The AI continuously monitors your CRM and communication channels, flagging leads that are going cold or overdue for follow-up. It can even draft personalized re-engagement messages to warm them back up, turning “lost opportunities” into revived prospects.",
+      link: "#y",
+    },
+    {
+      title: "Instant SOP Recall",
+      description:
+        "Never get stuck waiting on instructions again. The AI instantly surfaces the correct Standard Operating Procedure, training material, or workflow document when you ask—ensuring consistency, speed, and accuracy across your team.",
+      link: "z",
     },
   ];
 
@@ -71,8 +83,7 @@ const FeaturesSection = () => {
             MEET <span className="text-green-400">NOHA</span>: Your AI Co-Pilot
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed urbanist">
-            Discover how Noha's intelligent features transform your business
-            operations and drive growth
+            Not a bot. Not just a tool. Your true second-in-command.
           </p>
         </div>
 

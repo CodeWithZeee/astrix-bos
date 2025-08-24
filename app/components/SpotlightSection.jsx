@@ -75,10 +75,10 @@ const SpotlightSection = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden bg-[#000000]">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5"></div>
-      <div className="absolute top-32 right-20 w-40 h-40 bg-purple-500/5 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black-500/5 via-transparent to-green-500/5"></div>
+      <div className="absolute top-32 right-20 w-40 h-40 bg-black-500/5 rounded-full blur-3xl animate-float"></div>
       <div
-        className="absolute bottom-32 left-20 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl animate-float"
+        className="absolute bottom-32 left-20 w-32 h-32 bg-black-500/10 rounded-full blur-2xl animate-float"
         style={{ animationDelay: "3s" }}
       ></div>
 
