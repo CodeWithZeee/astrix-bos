@@ -46,7 +46,7 @@ export default function ContactForm() {
     }
     try {
       setIsLoading(true);
-      await submitForm({
+      const data = await submitForm({
         name: formData.name,
         email: formData.email,
         contact: formData.contact,
@@ -54,6 +54,8 @@ export default function ContactForm() {
       });
 
       toast.success("Form submitted successfully!");
+      console.log(data);
+
       router.push("/"); // Redirect to home page
       setIsLoading(false);
     } catch (error) {
