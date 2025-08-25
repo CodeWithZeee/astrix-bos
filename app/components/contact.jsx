@@ -1,16 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import { submitForm } from "../../lib/actions/form";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact: "",
     message: "",
   });
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,21 +35,30 @@ export default function ContactForm() {
   };
 
   const handleSend = async () => {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.contact ||
+      !formData.message
+    ) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
     try {
-      const data = await submitForm({
+      setIsLoading(true);
+      await submitForm({
         name: formData.name,
         email: formData.email,
         contact: formData.contact,
         message: formData.message,
       });
 
-      if (data.success) {
-        toast.success("Form submitted successfully!");
-      } else {
-        toast.error("Error submitting form.");
-      }
+      toast.success("Form submitted successfully!");
+      router.push("/"); // Redirect to home page
+      setIsLoading(false);
     } catch (error) {
       toast.error("Error submitting form. [SERVER]");
+      setIsLoading(false);
     }
   };
 
@@ -150,10 +164,11 @@ export default function ContactForm() {
                     CANCEL
                   </button>
                   <button
+                    disabled={isLoading}
                     onClick={handleSend}
                     className="bg-transparent border-none text-green-400 text-[14px] font-bold tracking-[1.4px] cursor-pointer outline-none hover:text-[#b9134f] transition-colors"
                   >
-                    SEND
+                    {isLoading ? <Loader2 className="animate-spin" /> : "SEND"}
                   </button>
                 </div>
               </div>
