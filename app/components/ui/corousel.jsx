@@ -1,65 +1,70 @@
 "use client";
-import React from 'react';
+import React from "react";
 
-const EasterCarousel = ({ 
+const EasterCarousel = ({
   items = [],
   reverse = false,
   mask = true,
-  duration = '40s',
-  itemWidth = '280px',
-  itemHeight = '450px',
-  itemGap = '2rem',
-  carouselWidth = 'min(80vw, 1200px)'
+  duration = "40s",
+  itemWidth = "280px",
+  itemHeight = "450px",
+  itemGap = "2rem",
+  carouselWidth = "min(80vw, 1200px)",
 }) => {
   const defaultItems = [
-    { 
+    {
       id: 1,
-      image: "https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "The Cross",
-      title: "The Cross",
-      description: "The Cross is a central symbol of Easter, representing the crucifixion of Jesus Christ and his sacrifice for humanity. It serves as a reminder of suffering, love, and redemption, and is often displayed during Holy Week and Easter Sunday to honor the foundation of Christian faith.",
-      link: "#"
+      image: "Scroll1.png",
+      alt: "Home Improvement Pros",
+      title: "Home Improvement Pros",
+      description:
+        "From roofers to remodelers, HVAC, flooring, and painting contractors, Noha ensures every inquiry is answered instantly. With automated scheduling, follow-ups, and 24/7 availability, your team never misses a lead—even after hours or on the job site.",
+      link: "#",
     },
     {
       id: 2,
-      image: "https://images.pexels.com/photos/7168798/pexels-photo-7168798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "easter eggs",
-      title: "Easter Eggs",
-      description: "Easter eggs are a colorful symbol of new life and rebirth, often decorated and hidden for festive hunts. The tradition comes from ancient spring rituals and was later adopted into Easter celebrations to represent the resurrection.",
-      link: "#"
+      image: "Scroll2.png",
+      alt: "Real Estate Agents & Teams",
+      title: "Real Estate Agents & Teams",
+      description:
+        "In real estate, speed matters. Noha engages new leads the moment they reach out, nurturing them with instant responses and around-the-clock follow-up. Whether for solo agents or large broker teams, it keeps your pipeline moving while you focus on closing deals.",
+      link: "#",
     },
     {
       id: 3,
-      image: "https://images.pexels.com/photos/4099179/pexels-photo-4099179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "hot cross buns",
-      title: "Hot Cross Buns",
-      description: "Hot cross buns are sweet, spiced buns marked with a cross on top, traditionally eaten on Good Friday. They originated in England and symbolize the crucifixion, with the cross representing Jesus and the spices recalling burial traditions.",
-      link: "#"
+      image: "Scroll3.png",
+      alt: "Personal Services",
+      title: "Personal Services",
+      description:
+        "For businesses built on appointments, Noha becomes your front desk. It handles booking, reminders, and client communications—ensuring patients and clients feel cared for while your team focuses on service delivery.",
+      link: "#",
     },
     {
       id: 4,
-      image: "https://images.pexels.com/photos/5145/animal-easter-chick-chicken.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "easter chick",
-      title: "Easter Chick",
-      description: "Easter chicks are a cheerful symbol of new life and beginnings, often seen alongside eggs in spring decorations. They represent birth and renewal, tying into the themes of Easter and the arrival of spring.",
-      link: "#"
+      image: "Scroll4.png",
+      alt: "Coaches, Consultants & Professionals",
+      title: "Coaches, Consultants & Professionals",
+      description:
+        "From business coaches to consultants, lawyers, and accountants, Noha keeps leads warm, handles follow-ups, and manages scheduling invisibly in the background. It takes the admin burden off your plate so you can focus entirely on delivering value.",
+      link: "#",
     },
     {
       id: 5,
-      image: "https://images.pexels.com/photos/2072158/pexels-photo-2072158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "easter bunny",
-      title: "Easter Bunnies",
-      description: "Easter bunnies are a popular symbol of spring and new life, often seen delivering colorful eggs to children.",
-      link: "#"
+      image: "Scroll5.png",
+      alt: "Local Service Businesses",
+      title: "Local Service Businesses",
+      description:
+        "For plumbers, electricians, landscapers, or any local service provider, Noha is the competitive advantage. It answers calls, books jobs, and manages customer care seamlessly—making sure every client feels heard and every opportunity is captured.",
+      link: "#",
     },
-    {
-      id: 6,
-      image: "https://images.pexels.com/photos/12787666/pexels-photo-12787666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "crown of thorns",
-      title: "Crown of Thorns",
-      description: "The Crown of Thorns symbolizes the suffering of Jesus before his crucifixion. It represents the pain he endured for humanity's salvation and is a reminder of his sacrifice during Easter.",
-      link: "#"
-    }
+    // {
+    //   id: 6,
+    //   image: "https://images.pexels.com/photos/12787666/pexels-photo-12787666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   alt: "crown of thorns",
+    //   title: "Crown of Thorns",
+    //   description: "The Crown of Thorns symbolizes the suffering of Jesus before his crucifixion. It represents the pain he endured for humanity's salvation and is a reminder of his sacrifice during Easter.",
+    //   link: "#"
+    // }
   ];
 
   const carouselItems = items.length > 0 ? items : defaultItems;
@@ -69,7 +74,7 @@ const EasterCarousel = ({
     <>
       <style jsx>{`
         @import url(https://fonts.bunny.net/css?family=abel:400);
-        
+
         .carousel {
           --items: ${itemCount};
           --carousel-duration: ${duration};
@@ -137,14 +142,54 @@ const EasterCarousel = ({
           }
         }
 
-        .carousel-item:nth-child(1) { --i: 0; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 0 * -1); }
-        .carousel-item:nth-child(2) { --i: 1; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 1 * -1); }
-        .carousel-item:nth-child(3) { --i: 2; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 2 * -1); }
-        .carousel-item:nth-child(4) { --i: 3; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 3 * -1); }
-        .carousel-item:nth-child(5) { --i: 4; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 4 * -1); }
-        .carousel-item:nth-child(6) { --i: 5; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 5 * -1); }
-        .carousel-item:nth-child(7) { --i: 6; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 6 * -1); }
-        .carousel-item:nth-child(8) { --i: 7; animation-delay: calc(var(--carousel-duration) / var(--items) * 1 * 7 * -1); }
+        .carousel-item:nth-child(1) {
+          --i: 0;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 0 * -1
+          );
+        }
+        .carousel-item:nth-child(2) {
+          --i: 1;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 1 * -1
+          );
+        }
+        .carousel-item:nth-child(3) {
+          --i: 2;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 2 * -1
+          );
+        }
+        .carousel-item:nth-child(4) {
+          --i: 3;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 3 * -1
+          );
+        }
+        .carousel-item:nth-child(5) {
+          --i: 4;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 4 * -1
+          );
+        }
+        .carousel-item:nth-child(6) {
+          --i: 5;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 5 * -1
+          );
+        }
+        .carousel-item:nth-child(7) {
+          --i: 6;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 6 * -1
+          );
+        }
+        .carousel-item:nth-child(8) {
+          --i: 7;
+          animation-delay: calc(
+            var(--carousel-duration) / var(--items) * 1 * 7 * -1
+          );
+        }
 
         .carousel-image {
           width: 100%;
@@ -204,8 +249,10 @@ const EasterCarousel = ({
           100% {
             transform: translateX(
               calc(
-                (var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) *
-                  -1
+                (
+                    var(--items) *
+                      (var(--carousel-item-width) + var(--carousel-item-gap))
+                  ) * -1
               )
             );
           }
@@ -220,24 +267,21 @@ const EasterCarousel = ({
         }
       `}</style>
 
-      <div 
-        className="carousel" 
+      <div
+        className="carousel"
         data-mask={mask.toString()}
         data-reverse={reverse.toString()}
       >
         {carouselItems.map((item, index) => (
           <article key={item.id || index} className="carousel-item">
-            <img 
-              src={item.image} 
-              alt={item.alt || item.title} 
+            <img
+              src={item.image}
+              alt={item.alt || item.title}
               className="carousel-image"
             />
-            <h2 className="carousel-title">{item.title}</h2>
+            <h2 className="carousel-title ">{item.title}</h2>
             <div className="carousel-content">
               <p className="carousel-description">{item.description}</p>
-              <a href={item.link} className="carousel-link">
-                Read more
-              </a>
             </div>
           </article>
         ))}
