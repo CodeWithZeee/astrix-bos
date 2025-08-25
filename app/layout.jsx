@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import LoadingWrapper from "./components/LoadingWrapper";
 import { LoadingProvider } from "./components/LoadingContext";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Astrix AI BOS",
@@ -12,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={"antialiased overflow-x-hidden"}>
+        <Toaster />
         <LoadingProvider>
           <LoadingWrapper>
-          
-              <Navbar />
+            <Navbar />
             <main>{children}</main>
           </LoadingWrapper>
         </LoadingProvider>

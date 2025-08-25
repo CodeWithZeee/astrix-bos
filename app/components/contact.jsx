@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitForm } from "../../lib/actions/form";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -30,14 +31,20 @@ export default function ContactForm() {
 
   const handleSend = async () => {
     try {
-      await submitForm({
+      const data = await submitForm({
         name: formData.name,
         email: formData.email,
         contact: formData.contact,
         message: formData.message,
       });
+
+      if (data.success) {
+        toast.success("Form submitted successfully!");
+      } else {
+        toast.error("Error submitting form.");
+      }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      toast.error("Error submitting form. [SERVER]");
     }
   };
 
