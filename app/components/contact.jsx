@@ -60,6 +60,7 @@ export default function ContactForm() {
       setIsLoading(false);
     } catch (error) {
       toast.error("Error submitting form. [SERVER]");
+      console.error(error);
       setIsLoading(false);
     }
   };
