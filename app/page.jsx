@@ -1,5 +1,5 @@
 import "./globals.css";
-import { NohaSection } from "./ignore/Noha-section";
+// import { NohaSection } from "./ignore/Noha-section";
 import Navbar from "./components/Navbar";
 import {
   AlertTriangle,

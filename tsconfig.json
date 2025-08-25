@@ -25,6 +25,6 @@
     "**/*.ts",
     "**/*.tsx",
     "app/components/final-cta-section.jsx"
-  ],
+, "lib/actions/form.js"  ],
   "exclude": ["node_modules"]
 }

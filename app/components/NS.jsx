@@ -22,8 +22,9 @@ const NS = () => {
         <div className="flex flex-col mt-4  ">
           <AnimatedCardGrid className="" />
           {/* <AnimatedCardGrid className="" /> */}
-        </div>  
+        </div> 
     </section>
+    <p className='flex justify-center items-center text-3xl mb-32'>The result: <span className='text-emerald-400 pl-2 pr-2'>more</span>closed deals, <span className='text-emerald-400 pl-2 pr-2'>more</span>time to grow , and <span className='text-emerald-400 pl-2 pr-2'>more</span>micromanagement.</p>
    </>
   )
 }

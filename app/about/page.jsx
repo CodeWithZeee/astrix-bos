@@ -5,6 +5,7 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold text-white mb-4">About Us</h1>
         <p className="text-slate-300">Learn more about our mission and vision</p>
       </div>
+      
     </div>
   );
 }

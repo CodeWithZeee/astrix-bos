@@ -5,10 +5,10 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 const SpotlightSection = () => {
   const services = [
     {
-      title: "Business Intelligence",
+      title: "AI Voice Agents (Inbound + Outbound)",
       description:
-        "Transform raw data into actionable insights with advanced analytics and reporting tools that help you make informed decisions.",
-      icon: "📊",
+        "Handle customer calls 24/7 with human-like AI voice agents that answer, follow up, and engage leads naturally.",
+      icon: "🎙️",
       color: "#3b82f6",
       canvasColors: [
         [59, 130, 246],
@@ -16,10 +16,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Process Automation",
+      title: "Appointment Booking & Calendar Sync",
       description:
-        "Eliminate repetitive tasks and streamline workflows with intelligent automation that adapts to your business needs.",
-      icon: "⚡",
+        "Automatically schedules, reschedules, and syncs meetings across calendars without the back-and-forth.",
+      icon: "📅",
       color: "#8b5cf6",
       canvasColors: [
         [139, 92, 246],
@@ -27,10 +27,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Customer Insights",
+      title: "Smart CRM with Auto Updates",
       description:
-        "Understand your customers better with deep behavioral analysis and predictive modeling for enhanced engagement.",
-      icon: "👥",
+        "Keeps your CRM always current by capturing interactions, updating contacts, and logging activities in real time..",
+      icon: "📇",
       color: "#06b6d4",
       canvasColors: [
         [6, 182, 212],
@@ -38,10 +38,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Revenue Optimization",
+      title: "Workflow, Task & Team Management",
       description:
-        "Maximize your revenue potential with AI-driven pricing strategies and sales performance optimization.",
-      icon: "💰",
+        "Organize projects, assign tasks, and coordinate teams in one centralized workspace.",
+      icon: "🗂️",
       color: "#10b981",
       canvasColors: [
         [16, 185, 129],
@@ -49,10 +49,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Risk Management",
+      title: "Centralized Notes, Calls & Summaries",
       description:
-        "Proactively identify and mitigate business risks with predictive analytics and real-time monitoring systems.",
-      icon: "🛡️",
+        "Never lose context—every note, call recording, and instant summary is stored in one place.",
+      icon: "📝",
       color: "#f59e0b",
       canvasColors: [
         [245, 158, 11],
@@ -60,10 +60,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Growth Strategy",
+      title: "Modular Roles & Permissions",
       description:
-        "Accelerate your business growth with data-driven strategies and market opportunity identification.",
-      icon: "🚀",
+        "Set custom access levels to ensure secure, role-based control across your organization.",
+      icon: "🔐",
       color: "#ef4444",
       canvasColors: [
         [239, 68, 68],
@@ -85,7 +85,7 @@ const SpotlightSection = () => {
       <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 glass-card subtle-glow text-purple-400 px-6 py-3 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 glass-card subtle-glow text-green-400 px-6 py-3 rounded-full text-sm font-medium mb-6">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
             </svg>
@@ -99,7 +99,7 @@ const SpotlightSection = () => {
             </svg>
           </div>
           <h2 className="text-6xl font-bold text-white mb-6 leading-tight">
-            Advanced Solutions
+           What <span className="text-emerald-400">Noha</span> Can Do
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
             Unlock your business potential with our comprehensive suite of
@@ -133,7 +133,7 @@ const SpotlightSection = () => {
                   </p>
 
                   {/* Learn More Link */}
-                  <div className="mt-6 pt-4 border-t border-slate-700/50">
+                  {/* <div className="mt-6 pt-4 border-t border-slate-700/50">
                     <span className="text-sm font-medium text-slate-500 group-hover:text-white transition-colors duration-300 inline-flex items-center">
                       Learn More
                       <svg
@@ -150,7 +150,7 @@ const SpotlightSection = () => {
                         />
                       </svg>
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </CardSpotlight>
 
@@ -169,7 +169,7 @@ const SpotlightSection = () => {
         </div>
 
         {/* Bottom Call to Action */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="glass-card rounded-2xl p-8 max-w-3xl mx-auto border-purple-500/20">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Transform Your Business?
@@ -187,7 +187,7 @@ const SpotlightSection = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
