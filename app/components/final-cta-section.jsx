@@ -41,7 +41,7 @@ export function FinalCTASection() {
 
   return (
     <section
-      className="py-20 px-4 bg-gradient-to-b from-background to-muted/20"
+      className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/20"
       style={{
         "--background": "oklch(0.067 0.024 240)",
         "--foreground": "oklch(0.985 0 0)",
@@ -68,17 +68,17 @@ export function FinalCTASection() {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-sans tracking-tight">
+        <div className="text-center mb-10 sm:mb-16 lg:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-sans tracking-tight px-4">
             Invest in the Future of Service Businesses
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             Whether you're looking to invest, partner, or scale your business,
             Noha is your opportunity to be ahead of the curve.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           {targetAudiences.map((audience, index) => {
             const IconComponent = audience.icon;
             return (
@@ -86,67 +86,58 @@ export function FinalCTASection() {
                 key={index}
                 className={`relative overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br ${audience.bgGradient} backdrop-blur-sm h-full`}
               >
-                <CardHeader className="text-center pb-6 pt-8">
-                  <div className="mx-auto mb-6 p-3 rounded-2xl bg-background/80 w-fit shadow-sm">
+                <CardHeader className="text-center pb-4 sm:pb-6 pt-6 sm:pt-8">
+                  <div className="mx-auto mb-4 sm:mb-6 p-2 sm:p-3 rounded-2xl bg-background/80 w-fit shadow-sm">
                     <IconComponent
-                      className={`h-7 w-7 ${audience.iconColor}`}
+                      className={`h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 ${audience.iconColor}`}
                     />
                   </div>
-                  <CardTitle className="text-xl font-bold text-card-foreground font-sans mb-2">
+                  <CardTitle className="text-lg sm:text-xl font-bold text-card-foreground font-sans mb-2">
                     {audience.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground text-base font-medium">
+                  <CardDescription className="text-muted-foreground text-sm sm:text-base font-medium">
                     {audience.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="text-center px-6 pb-8">
-                  <p className="text-card-foreground/90 leading-relaxed mb-8 text-sm">
+                <CardContent className="text-center pb-6 sm:pb-8">
+                  <p className="text-sm sm:text-base text-card-foreground leading-relaxed mb-6">
                     {audience.highlight}
                   </p>
-                  <div className="space-y-3">
-                    <Button
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2.5 transition-all duration-200 shadow-sm hover:shadow-md"
-                      size="default"
-                    >
-                      <Phone className="mr-2 h-4 w-4" />
-                      Book a Demo
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="w-full hover:bg-muted/50 hover:text-foreground font-medium py-2.5 bg-background/50 transition-all duration-200"
-                      size="default"
-                    >
-                      <FileText className="mr-2 h-4 w-4" />
-                      Get Investor Deck
-                    </Button>
-                  </div>
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base"
+                  >
+                    Learn More
+                  </Button>
                 </CardContent>
               </Card>
             );
           })}
         </div>
 
-        <div className="text-center bg-muted/30 rounded-2xl p-8">
-          <p className="text-base text-muted-foreground mb-6 font-medium">
-            Ready to transform your business with AI? Let's discuss your
-            specific needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 transition-all duration-200 shadow-sm hover:shadow-md flex-1"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              Schedule Demo
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="hover:bg-muted/50 hover:text-foreground font-medium px-6 py-3 bg-background/50 transition-all duration-200 flex-1"
-            >
-              <FileText className="mr-2 h-4 w-4" />
-              Get Materials
-            </Button>
+        {/* Contact Section */}
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 sm:p-8 lg:p-10 backdrop-blur-sm">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 sm:mb-6">
+              Ready to Get Started?
+            </h3>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto">
+              Join the revolution in business operations. Contact us today to
+              learn how Noha can transform your business.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                Contact Us
+              </Button>
+              <Button
+                variant="outline"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base"
+              >
+                <FileText className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                Download Brochure
+              </Button>
+            </div>
           </div>
         </div>
       </div>

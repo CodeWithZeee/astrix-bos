@@ -1,23 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
+
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const links = [
     { href: "/", label: "Home" },
     { href: "/contact", label: "Contact us" },
     { href: "/about", label: "About" },
   ];
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <section className="fixed w-full h-16 z-[999] top-0 bg-[#000000] Major-mono font-extrabold  ">
+    <section className="fixed w-full h-16 z-[999] top-0 bg-[#000000] Major-mono font-extrabold">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
           <div className="">
-            <Image src="/logo.png" alt="Logo"  width={50} height={50} />
+            <Image src="/logo.png" alt="Logo" width={50} height={50} />
           </div>
-          {/* Links */}
-          <div className="flex gap-28">
+
+          {/* Desktop Links */}
+          <div className="hidden md:flex gap-28">
             {links.map((link) => (
               <div key={link.href} className="navLinks relative group">
                 <Link href={link.href} className="">
@@ -27,9 +38,62 @@ const Navbar = () => {
               </div>
             ))}
           </div>
-          {/* For space */}
-          <div></div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              className="text-white p-2 hover:bg-gray-800 rounded-md transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* For space on desktop */}
+          <div className="hidden md:block"></div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-[#000000] border-t border-gray-700 animate-fade-in">
+            <div className="flex flex-col py-4">
+              {links.map((link) => (
+                <div key={link.href} className="navLinks relative group">
+                  <Link
+                    href={link.href}
+                    className="block px-4 py-3 text-white hover:bg-gray-800 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                  <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </MaxWidthWrapper>
     </section>
   );

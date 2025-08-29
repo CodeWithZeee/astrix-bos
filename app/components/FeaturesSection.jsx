@@ -12,7 +12,7 @@ const FeaturesSection = () => {
     {
       title: "Smart Suggestions",
       description:
-        "The AI doesn’t just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
+        "The AI doesn't just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
       link: "/",
     },
     {
@@ -30,13 +30,13 @@ const FeaturesSection = () => {
     {
       title: "Contextual Recall",
       description:
-        "No more searching through logs. The AI remembers context, so you can ask natural questions like “What was discussed in Tuesday’s call?” or “Show me the contract update from last week,” and it instantly retrieves the right information, saving hours of digging.",
+        "No more searching through logs. The AI remembers context, so you can ask natural questions like “What was discussed in Tuesday's call?” or “Show me the contract update from last week,” and it instantly retrieves the right information, saving hours of digging.",
       link: "#lead-qualification",
     },
     {
       title: "Voice Command Ready",
       description:
-        "Whether you’re commuting, multitasking, or in the field, control your operations with simple voice commands. From creating tasks to pulling reports, the AI executes your requests instantly, making true hands-free business management a reality.",
+        "Whether you're commuting, multitasking, or in the field, control your operations with simple voice commands. From creating tasks to pulling reports, the AI executes your requests instantly, making true hands-free business management a reality.",
       link: "#x",
     },
     {
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
         className="absolute bottom-20 right-10 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-float"
         style={{ animationDelay: "2s" }}
       ></div>
-      
+
       <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -79,8 +79,8 @@ const FeaturesSection = () => {
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6 leading-tight ">
-            MEET <span className="text-green-400">NOHA</span>: Your AI Co-Pilot
+          <h2 className="font-bold text-white mb-6 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <span className="text-green-400">NOHA'S</span>: Solutions
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed urbanist">
             Not a bot. Not just a tool. Your true second-in-command.
@@ -89,7 +89,6 @@ const FeaturesSection = () => {
 
         {/* Features Grid with Hover Effect */}
         <HoverEffect items={features} className="max-w-6xl mx-auto" />
-
       </div>
     </section>
   );

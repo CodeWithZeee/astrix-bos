@@ -18,20 +18,20 @@ import {
 } from "lucide-react";
 // import Section3 from "./ignore/Section3";
 import FeaturesSection from "./components/FeaturesSection";
-import HNW from "./components/HNW"
+import HNW from "./components/HNW";
 import SpotlightSection from "./components/SpotlightSection";
 import RevealAnimation from "./components/RevealAnimation";
 import { FinalCTASection } from "./components/final-cta-section";
 import Landingpage from "./components/Landingpage";
 import Problems from "./components/Problems";
-import NS from "./components/NS"
-import WNH from './components/WNH'
+import NS from "./components/NS";
+import WNH from "./components/WNH";
 
 export default function Home() {
   return (
     <>
       <RevealAnimation delay={0.1}>
-      <Landingpage />
+        <Landingpage />
         {/* <Problems /> */}
       </RevealAnimation>
 
@@ -46,18 +46,18 @@ export default function Home() {
       </RevealAnimation>
 
       {/* Noha's Solution Section */}
-      <RevealAnimation delay={0.1}>
+      {/* <RevealAnimation delay={0.1}>
         <NS />
-      </RevealAnimation>
+      </RevealAnimation> */}
 
       {/* Spotlight Section with Card Spotlight Effect */}
       <RevealAnimation delay={0.1}>
         <SpotlightSection />
       </RevealAnimation>
 
-      <RevealAnimation delay={0.1}>
+      {/* <RevealAnimation delay={0.1}>
         <WNH />
-      </RevealAnimation>
+      </RevealAnimation> */}
 
       <FinalCTASection />
     </>

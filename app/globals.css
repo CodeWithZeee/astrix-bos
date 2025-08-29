@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
@@ -26,17 +26,15 @@ body {
   --font-mono: var(--font-geist-mono);
 } */
 
-
 /* Navbar underline effect */
 .navLinks-underline {
-  background-color: #4ADE80;
+  background-color: #4ade80;
   transition: width 0.3s, background-color 0.3s;
 }
 .group:hover .navLinks-underline {
   width: 80%;
-  background-color: #4ADE80 /* Change this to your desired hover color */
+  background-color: #4ade80; /* Change this to your desired hover color */
 }
-
 
 @font-face {
   font-family: "Mokoto";
@@ -46,19 +44,19 @@ body {
   font-display: swap;
 }
 
-.Major-mono{
+.Major-mono {
   font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.audiowide{
+.audiowide {
   font-family: "Audiowide", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
-.urbanist{
+.urbanist {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -69,7 +67,7 @@ body {
   font-family: "Mokoto", sans-serif;
 }
 
-.chakra{
+.chakra {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -101,7 +99,7 @@ h2 {
   font-family: "Mokoto", sans-serif;
 }
 
-p{
+p {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -122,7 +120,6 @@ p{
     @apply absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-red-500/10 size-[450px] rotate-45;
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -192,4 +189,8 @@ p{
 
 .animate-fade-in-delayed {
   animation: fade-in-delayed 2s ease-out;
+}
+
+.absoluteCenter {
+  @apply top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:right-0 lg:-translate-x-0;
 }
