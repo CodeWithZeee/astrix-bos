@@ -127,14 +127,14 @@ export function FinalCTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5 " />
                 Contact Us
               </Button>
               <Button
                 variant="outline"
                 className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base"
               >
-                <FileText className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                <FileText className="h-4 w-4 sm:h-5 sm:w-5 " />
                 Download Brochure
               </Button>
             </div>
