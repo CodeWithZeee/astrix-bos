@@ -24,7 +24,7 @@ import RevealAnimation from "./components/RevealAnimation";
 import { FinalCTASection } from "./components/final-cta-section";
 import Landingpage from "./components/Landingpage";
 import Problems from "./components/Problems";
-import NS from "./components/NS";
+import MN from "./components/MN";
 import WNH from "./components/WNH";
 
 export default function Home() {
@@ -33,6 +33,12 @@ export default function Home() {
       <RevealAnimation delay={0.1}>
         <Landingpage />
         {/* <Problems /> */}
+      </RevealAnimation>
+
+
+      {/* Meet Noha Section */}
+      <RevealAnimation delay={0.1}>
+        <MN />
       </RevealAnimation>
 
       {/* Features Section with Card Hover Effect */}
@@ -45,10 +51,6 @@ export default function Home() {
         <HNW />
       </RevealAnimation>
 
-      {/* Noha's Solution Section */}
-      {/* <RevealAnimation delay={0.1}>
-        <NS />
-      </RevealAnimation> */}
 
       {/* Spotlight Section with Card Spotlight Effect */}
       <RevealAnimation delay={0.1}>

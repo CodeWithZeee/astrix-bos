@@ -5,7 +5,7 @@ import Image from "next/image";
 import { AudioLines } from "lucide-react";
 const Landingpage = () => {
   return (
-    <section className="flex flex-col relative lg:flex-row items-center justify-between  bg-[#000000] text-white px-4 lg:ml-16 mt-15 max-w-full">
+    <section className="flex flex-col relative lg:flex-row items-center justify-between  bg-[#000000] text-white px-4 lg:ml-16 mt-55 max-w-full">
       {/* Left Side: Text and Button */}
       <div className="flex flex-col items-start max-w-full mt-20 z-10 backdrop-blur-[2px] lg:max-w-1/2 text-center lg:text-left mb-8 lg:mb-0">
         <p className="mokoto text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
