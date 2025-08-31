@@ -28,7 +28,7 @@ const MN = () => {
             width={500}
             height={500}
           />
-          <div className="h-12 w-full flex justify-center items-center text-black bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20">
+          <div className="h-12 w-full flex justify-center items-center text-black group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
             NOHA
           </div>
         </div>
