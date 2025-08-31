@@ -22,20 +22,20 @@ const MN = () => {
           <div className="absolute inset-0 bg-green-400/20 rounded-full blur-3xl scale-0 group-hover:scale-100 transition-all duration-500 ease-out"></div>
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-100 transition-all duration-700 ease-out delay-100"></div>
           <Image
-            className="relative z-10"
+            className="relative z-10 mt-0.5"
             src="/Noha_Avatar.png"
             alt="Noha Avatar"
             width={500}
             height={500}
           />
-          <div className="h-12 w-132 flex justify-center items-center text-black bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20">
+          <div className="h-12 w-full flex justify-center items-center text-black bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20">
             NOHA
           </div>
         </div>
       </section>
-      <p className="mokoto flex justify-center items-center text-1xl text-center mb-32 mt-8">
+      <h2 className="audiowide flex justify-center items-center text-2xl text-center mb-2 mt-8">
         With Noha, your business doesn’t just run smoother — it runs itself.
-      </p>
+      </h2>
     </>
   );
 };

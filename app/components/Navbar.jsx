@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
@@ -19,19 +18,22 @@ const Navbar = () => {
   };
 
   return (
-    <section className="fixed w-full h-16 z-[999] top-0 bg-[#000000] Major-mono font-extrabold">
+    <section className="fixed w-full h-24 z-[999] top-0 bg-[#000000] Major-mono text-xl font-extrabold">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
           <div className="">
-            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <Image src="/logo.png" alt="Logo" width={80} height={80} />
           </div>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex gap-28">
+          <div className="hidden md:flex items-center gap-28">
             {links.map((link) => (
-              <div key={link.href} className="navLinks relative group">
-                <Link href={link.href} className="">
+              <div
+                key={link.href}
+                className="navLinks relative group flex items-center"
+              >
+                <Link href={link.href} className="flex items-center">
                   {link.label}
                 </Link>
                 <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />

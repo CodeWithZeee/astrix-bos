@@ -10,13 +10,13 @@ const HNW = () => {
           HEADING (Centered)
       ======================== */}
       <div className="w-full flex justify-center items-center gap-2 text-center px-4">
-        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 text-green-400" />
+        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 xl:h-24 text-green-400" />
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex items-center">
           How <span className="text-green-400 mx-2">noha</span> works
         </h2>
 
-        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 text-green-400" />
+        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 xl:h-24 text-green-400" />
       </div>
 
       {/* =======================
@@ -36,18 +36,18 @@ const HNW = () => {
 
         {/* RIGHT SIDE: Texts */}
         <div className="flex flex-col justify-center text-center lg:text-left w-full lg:w-1/2 space-y-6">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
+          <p className="audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
             Noha runs the entire backend of your business so you can focus on
             growth, not grind.
           </p>
 
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
+          <p className="audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
             She follows up, answers calls, books appointments, manages your
             pipeline, and delivers reports — without integrations, app-hopping,
             or human bottlenecks.
           </p>
 
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+          <p className="mt-3 audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
             One platform. One AI brain. Infinite scale.
           </p>
         </div>
