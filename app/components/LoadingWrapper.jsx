@@ -1,12 +1,12 @@
-
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import LoadingScreen from "./LoadingScreen";
 import { useLoading } from "./LoadingContext";
 
 const LoadingWrapper = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const { handleLoadingComplete } = useLoading();
+  const hasLoadedRef = useRef(false);
 
   const onLoadingComplete = () => {
     setIsLoading(false);
@@ -14,11 +14,19 @@ const LoadingWrapper = ({ children }) => {
   };
 
   useEffect(() => {
+    // Only show loading screen on initial page load
+    if (hasLoadedRef.current) {
+      setIsLoading(false);
+      handleLoadingComplete();
+      return;
+    }
+
     if (document.readyState === "complete") {
       // Page already loaded, show loader for 1 more second
       const timer = setTimeout(() => {
         setIsLoading(false);
         handleLoadingComplete();
+        hasLoadedRef.current = true;
       }, 1000);
       return () => clearTimeout(timer);
     } else {
@@ -27,6 +35,7 @@ const LoadingWrapper = ({ children }) => {
         setTimeout(() => {
           setIsLoading(false);
           handleLoadingComplete();
+          hasLoadedRef.current = true;
         }, 1000);
       };
       window.addEventListener("load", handleLoad);

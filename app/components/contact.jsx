@@ -69,14 +69,14 @@ export default function ContactForm() {
     <div
       className=" flex"
       style={{
-        background: "linear-gradient(to right, #green 0%, #green 100%)",
+        // background: " linear-gradient(to right, #green 0%, #green 100%)",
       }}
     >
       <div
         className="flex-none max-w-[700px] mx-auto p-2.5"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        <div className="relative bg-[#3e3e3e] rounded-[15px] shadow-lg">
+        <div className="relative bg-[#000000] rounded-[15px] shadow-lg">
           {/* Screen shadow effect */}
           <div
             className="absolute top-0 left-5 right-5 bottom-0 rounded-[15px] -z-10"
@@ -112,7 +112,7 @@ export default function ContactForm() {
                 ></div>
               </div>
               <div className="mt-auto text-[8px] text-[#888] font-bold tracking-[1.4px] mb-8 md:mb-0">
-                CONTACT INFO : +62 81 314 928 595
+                CONTACT INFO : (313) 398-6372
               </div>
             </div>
 

@@ -9,15 +9,12 @@ const HNW = () => {
       {/* =======================
           HEADING (Centered)
       ======================== */}
-      <div className="w-full flex justify-center items-center gap-2 text-center px-4">
-        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 xl:h-24 text-green-400" />
-
+      <div className="w-full flex justify-center items-center gap-2 text-center px-4 pt-18 ">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex items-center">
           How <span className="text-green-400 mx-2">noha</span> works
         </h2>
 
-        <AudioLines className="h-10 sm:h-14 md:h-16 lg:h-20 xl:h-24 text-green-400" />
-      </div>
+        </div>
 
       {/* =======================
           MAIN SECTION

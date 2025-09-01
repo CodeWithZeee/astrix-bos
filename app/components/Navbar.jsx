@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <section className="fixed w-full h-24 z-[999] top-0 bg-[#000000] Major-mono text-xl font-extrabold">
+    <section className="fixed w-full h-24 z-[999] top-0 bg-[#000000] asimovian text-xl font-extrabold">
       <MaxWidthWrapper>
         <div className="flex items-center justify-between py-4 relative z-10">
           {/* Logo */}
@@ -33,7 +33,11 @@ const Navbar = () => {
                 key={link.href}
                 className="navLinks relative group flex items-center"
               >
-                <Link href={link.href} className="flex items-center">
+                <Link
+                  href={link.href}
+                  className="flex items-center"
+                  prefetch={true}
+                >
                   {link.label}
                 </Link>
                 <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />
@@ -87,6 +91,7 @@ const Navbar = () => {
                     href={link.href}
                     className="block px-4 py-3 text-white hover:bg-gray-800 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
+                    prefetch={true}
                   >
                     {link.label}
                   </Link>

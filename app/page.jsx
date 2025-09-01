@@ -57,9 +57,9 @@ export default function Home() {
         <SpotlightSection />
       </RevealAnimation>
 
-      {/* <RevealAnimation delay={0.1}>
+      <RevealAnimation delay={0.1}>
         <WNH />
-      </RevealAnimation> */}
+      </RevealAnimation>
 
       <FinalCTASection />
     </>

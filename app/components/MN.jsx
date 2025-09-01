@@ -6,7 +6,7 @@ import Image from "next/image";
 const MN = () => {
   return (
     <>
-      <div className="flex items-center justify-center mt-28">
+      <div className="flex items-center justify-center mt-38">
         <span className="mokoto text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
           MEET <span className="text-green-400">NOHA:</span> YOUR{" "}
           <span className="text-green-400">AI-COPILOT</span>

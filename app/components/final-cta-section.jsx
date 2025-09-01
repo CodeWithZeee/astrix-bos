@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -7,6 +8,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { TrendingUp, Users, Building2, Phone, FileText } from "lucide-react";
+import Link from "next/link";
 
 export function FinalCTASection() {
   const targetAudiences = [
@@ -72,7 +74,7 @@ export function FinalCTASection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-sans tracking-tight px-4">
             Invest in the Future of Service Businesses
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="asimovian text-gray-400 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             Whether you're looking to invest, partner, or scale your business,
             Noha is your opportunity to be ahead of the curve.
           </p>
@@ -84,7 +86,7 @@ export function FinalCTASection() {
             return (
               <Card
                 key={index}
-                className={`relative overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br ${audience.bgGradient} backdrop-blur-sm h-full`}
+                className={`relative overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br ${audience.bgGradient} backdrop-blur-sm h-full border-0`}
               >
                 <CardHeader className="text-center pb-4 sm:pb-6 pt-6 sm:pt-8">
                   <div className="mx-auto mb-4 sm:mb-6 p-2 sm:p-3 rounded-2xl bg-background/80 w-fit shadow-sm">
@@ -126,15 +128,25 @@ export function FinalCTASection() {
               learn how Noha can transform your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 " />
-                Contact Us
-              </Button>
+              <Link href="/contact">
+                <Button className="cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+                  {/* <Phone className="h-4 w-4 sm:h-5 sm:w-5 " /> */}
+                  Contact Us
+                </Button>
+              </Link>
               <Button
                 variant="outline"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Astrix-BOS-Technical-Documentation (1).pdf";
+                  link.download = "Astrix-BOS-Technical-Documentation.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
-                <FileText className="h-4 w-4 sm:h-5 sm:w-5 " />
+                <FileText className="h-4 w-4 sm:h-5 sm:w-5 cursor-pointer" />
                 Download Brochure
               </Button>
             </div>
