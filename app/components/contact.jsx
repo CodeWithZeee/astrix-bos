@@ -76,7 +76,7 @@ export default function ContactForm() {
         className="flex-none max-w-[700px] mx-auto p-2.5"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        <div className="relative bg-[#000000] rounded-[15px] shadow-lg">
+        <div className="relative bg-[#053d18] rounded-[15px] shadow-lg">
           {/* Screen shadow effect */}
           <div
             className="absolute top-0 left-5 right-5 bottom-0 rounded-[15px] -z-10"
@@ -84,7 +84,7 @@ export default function ContactForm() {
           ></div>
 
           {/* Screen header */}
-          <div className="flex items-center px-5 py-2.5 bg-[#4d4d4f] rounded-t-[15px]">
+          <div className="flex items-center px-5 py-2.5 bg-[#3f4541] rounded-t-[15px]">
             <div className="flex mr-auto">
               <div className="w-2 h-2 mr-1 rounded-full bg-[#ed1c6f]"></div>
               <div className="w-2 h-2 mr-1 rounded-full bg-[#e8e925]"></div>
