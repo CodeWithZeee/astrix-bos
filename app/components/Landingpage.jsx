@@ -11,24 +11,23 @@ const Landingpage = () => {
         <p className="mokoto text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
           <span className="mokoto text-green-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             AstrixBOS
-          </span>
-          - The World's First
+          </span>{" "}
+          - The World's First{" "}
           <span className="mokoto text-green-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             AI-NATIVE
-          </span>
-          Business Co-Pilot
+          </span>{" "}
+          Business Operating System with built-in Co-Pilot
         </p>
         <br /> {/* Border */}
         <div className=" hidden lg:flex overflow-hidden border w-full border-green-400 border-dashed" />
         <div className="audiowide text-base sm:text-lg md:text-xl leading-relaxed mt-10">
-          Noha runs the entire backend of your business so you can focus on
-          growth, not grind.
+          Co-Pilot Noha runs the backend operations so you can focus on growth
         </div>
         <br />
         <button className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center">
-          <span className="pt-1"> Watch</span>
-          <span className="mokoto text-green-400 pt-1"> NOHA </span>
-          <span className="pt-1"> in action |</span>
+          <span className="pt-1"> Tour</span>
+          <span className="mokoto text-green-400 pt-1"> AstrixBOS </span>
+          <span className="pt-1">Platform</span>
           <AudioLines className="h-5" />
         </button>
       </div>

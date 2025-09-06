@@ -74,7 +74,7 @@ export function FinalCTASection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-sans tracking-tight px-4">
             Invest in the Future of Service Businesses
           </h2>
-          <p className="asimovian text-gray-400 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
+          <p className=" text-gray-400 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             Whether you're looking to invest, partner, or scale your business,
             Noha is your opportunity to be ahead of the curve.
           </p>
@@ -105,12 +105,12 @@ export function FinalCTASection() {
                   <p className="text-sm sm:text-base text-card-foreground leading-relaxed mb-6">
                     {audience.highlight}
                   </p>
-                  <Button
+                  {/* <Button
                     variant="outline"
                     className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base"
                   >
                     Learn More
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             );
@@ -129,14 +129,16 @@ export function FinalCTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact">
-                <Button className="cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+                <Button className="transform transition-transform duration-300 ease-in-out 
+               hover:scale-110 hover:shadow-lg cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
                   {/* <Phone className="h-4 w-4 sm:h-5 sm:w-5 " /> */}
                   Contact Us
                 </Button>
               </Link>
               <Button
                 variant="outline"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
+                className="transform transition-transform duration-300 ease-in-out 
+               hover:scale-110 hover:shadow-lg w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
                 onClick={() => {
                   const link = document.createElement("a");
                   link.href = "/Astrix-BOS-Technical-Documentation (1).pdf";

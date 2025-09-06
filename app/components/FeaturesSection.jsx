@@ -4,51 +4,51 @@ import { HoverEffect } from "./ui/card-hover-effect";
 const FeaturesSection = () => {
   const features = [
     {
-      title: "Daily Briefing",
+      title: "Smart Daily Briefing",
       description:
-        "Start every morning with a personalized AI-curated snapshot of your business. The agent compiles open tasks, new leads, pending follow-ups, and key messages from the previous day, so you wake up fully informed and ready to prioritize without digging through emails or dashboards.",
+        "Kickstart your day with an AI-curated snapshot and proactive nudges to keep tasks, leads, and follow-ups on track.",
       link: "#ai-voice",
     },
-    {
-      title: "Smart Suggestions",
-      description:
-        "The AI doesn't just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
-      link: "/",
-    },
+    // {
+    //   title: "Smart Suggestions",
+    //   description:
+    //     "The AI doesn't just wait for instructions—it anticipates them. By monitoring your pipeline, communication history, and workflows, it nudges you with timely recommendations (e.g., “Follow up with Sarah today” or “Schedule a demo with this prospect”). This ensures no opportunity slips through the cracks.",
+    //   link: "#smart-suggestions",
+    // },
     {
       title: "Calendar & Task Management",
       description:
-        "Forget manual scheduling chaos. The agent integrates directly with your calendar, automatically booking meetings, rescheduling conflicts, and updating tasks in real time. It works across teams, so everyone stays aligned without back-and-forth emails.",
+        "Seamlessly books, reschedules, and updates tasks across your team’s calendar—no back-and-forth emails.",
       link: "#pipeline",
     },
     {
       title: "Business Snapshot",
       description:
-        "Need a quick update? Just ask. The AI delivers live metrics—revenue, pipeline progress, support tickets, or project KPIs—through text or voice. It transforms complex dashboards into instant insights, keeping leadership and teams on the same page anytime, anywhere.",
+        "Get real-time metrics like revenue, pipeline, or KPIs via chat or voice—instant insights without dashboards.",
       link: "#support",
     },
-    {
-      title: "Contextual Recall",
-      description:
-        "No more searching through logs. The AI remembers context, so you can ask natural questions like “What was discussed in Tuesday's call?” or “Show me the contract update from last week,” and it instantly retrieves the right information, saving hours of digging.",
-      link: "#lead-qualification",
-    },
+    // {
+    //   title: "Contextual Recall",
+    //   description:
+    //     "Ask natural questions like “Tuesday’s call?” and the AI retrieves the right info instantly.",
+    //   link: "#lead-qualification",
+    // },
     {
       title: "Voice Command Ready",
       description:
-        "Whether you're commuting, multitasking, or in the field, control your operations with simple voice commands. From creating tasks to pulling reports, the AI executes your requests instantly, making true hands-free business management a reality.",
+        "Run your business hands-free with simple voice commands for tasks, reports, and updates.",
       link: "#x",
     },
     {
-      title: "Lead Monitor",
+      title: "Cold Lead Revival + Smart Recall",
       description:
-        "The AI continuously monitors your CRM and communication channels, flagging leads that are going cold or overdue for follow-up. It can even draft personalized re-engagement messages to warm them back up, turning “lost opportunities” into revived prospects.",
+        "Stay ahead with AI that flags cold leads for re-engagement and instantly recalls past calls, notes, or updates on request.",
       link: "#y",
     },
     {
       title: "Instant SOP Recall",
       description:
-        "Never get stuck waiting on instructions again. The AI instantly surfaces the correct Standard Operating Procedure, training material, or workflow document when you ask—ensuring consistency, speed, and accuracy across your team.",
+        "Pulls up any training or process doc on demand, keeping your team fast and consistent",
       link: "z",
     },
   ];
@@ -80,7 +80,8 @@ const FeaturesSection = () => {
             </svg>
           </div>
           <h2 className="font-bold text-white mb-6 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-            <span className="text-green-400">NOHA'S</span>: Solutions
+            <span className="text-green-400">NOHA'S</span>{" "}
+            : Solutions
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed urbanist">
             Not a bot. Not just a tool. Your true second-in-command.

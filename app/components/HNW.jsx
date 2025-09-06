@@ -13,8 +13,7 @@ const HNW = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex items-center">
           How <span className="text-green-400 mx-2">noha</span> works
         </h2>
-
-        </div>
+      </div>
 
       {/* =======================
           MAIN SECTION
