@@ -12,7 +12,7 @@ const WNH = () => {
       <h2 className="audiowide text-lg sm:text-xl md:text-2xl font-semibold flex items-center justify-center text-center px-4 sm:px-8 md:px-16 lg:px-24 mt-4 sm:mt-6">
         Noha is for service providers who want scale without chaos
       </h2>
-      <section className="flex items-center min-h-screen bg-[#000000] text-white px-4 sm:px-8 md:px-16 lg:px-16">
+      <section className="flex items-center bg-[#000000] text-white px-4 sm:px-8 md:px-16 lg:px-16">
         {/* Carousel Section */}
         <div className="w-full flex justify-center">
           <EasterCarousel />

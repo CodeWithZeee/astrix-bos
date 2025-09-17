@@ -37,8 +37,8 @@ const HNW = () => {
         </div>
 
         {/* RIGHT: Text */}
-        <div className="flex flex-col justify-center text-center lg:text-left w-full lg:w-1/2 space-y-6">
-          <p className="audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
+        <div className="flex flex-col justify-center text-center lg:text-left w-full lg:w-1/2 space-y-6 pl-4">
+          <p className="mt-3 audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
             Spin up a new AI Agent in seconds — no coding, no friction.
           </p>
           <p className="audiowide text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">

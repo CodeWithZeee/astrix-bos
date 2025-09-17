@@ -17,7 +17,7 @@ const MN = () => {
           Not a bot. Not just a tool. Your true second-in-command
         </h2>
       </div>
-      <section className="flex flex-col items-center justify-center bg-[#000000] text-white py-10 sm:py-12 md:py-16 md:min-h-screen">
+      <section className="flex flex-col items-center justify-center bg-[#000000] text-white">
         <div className="relative transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 group">
           <div className="absolute inset-0 bg-green-400/20 rounded-full blur-3xl scale-0 group-hover:scale-100 transition-all duration-500 ease-out"></div>
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-100 transition-all duration-700 ease-out delay-100"></div>
