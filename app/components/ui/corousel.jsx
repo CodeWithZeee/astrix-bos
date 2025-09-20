@@ -125,7 +125,7 @@ const EasterCarousel = ({
           border: 1px solid rgba(0, 0, 0, 0.25);
           padding-block-end: 1rem;
           border-radius: 10px;
-          background: white;
+          background: black;
           color: rgb(49, 65, 88);
           will-change: transform;
           animation-name: marquee;
