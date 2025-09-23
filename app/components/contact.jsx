@@ -106,7 +106,7 @@ export default function ContactForm() {
               <FormControl>
                 <Input placeholder="Enter your name" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className={"text-[crimson] text-left"} />
             </FormItem>
           )}
         />
@@ -119,7 +119,7 @@ export default function ContactForm() {
               <FormControl>
                 <Input placeholder="Enter your contact number" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className={"text-[crimson] text-left"} />
             </FormItem>
           )}
         />
@@ -132,7 +132,7 @@ export default function ContactForm() {
               <FormControl>
                 <Input placeholder="Enter your email" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className={"text-[crimson] text-left"} />
             </FormItem>
           )}
         />
@@ -145,7 +145,7 @@ export default function ContactForm() {
               <FormControl>
                 <Textarea placeholder="Enter your message" {...field} />
               </FormControl>
-              <FormMessage />
+              <FormMessage className={"text-[crimson] text-left"} />
             </FormItem>
           )}
         />
