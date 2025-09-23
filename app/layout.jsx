@@ -13,7 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={"antialiased overflow-x-hidden"}>
-        <Toaster />
+        <Toaster
+          toastOptions={{
+            style: {
+              background: "#333",
+              color: "#fff",
+            },
+          }}
+        />
         <LoadingProvider>
           <LoadingWrapper>
             <Navbar />

@@ -25,6 +25,8 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { submitForm } from "../../lib/actions/form";
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   name: z
@@ -57,6 +59,9 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const router = useRouter();
+
+  const [isLoading, setIsLoading] = useState(false);
+
   // 1. Define your form.
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -70,6 +75,7 @@ export default function ContactForm() {
 
   // 2. Define a submit handler.
   async function onSubmit(values) {
+    setIsLoading(true);
     try {
       const data = {
         name: values.name,
@@ -78,13 +84,13 @@ export default function ContactForm() {
         message: values.message,
       };
       await submitForm(data);
-      toast.success("Form submitted successfully!", {
-        onClose: () => {
-          router.push("/");
-        },
-      });
+      toast.success("Form submitted successfully!");
+      form.reset();
+      router.refresh();
+      setIsLoading(false);
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
+      setIsLoading(false);
     }
   }
 
@@ -146,9 +152,17 @@ export default function ContactForm() {
         <Button
           type="submit"
           variant={"outline"}
+          disabled={isLoading}
           className={"w-full hover:bg-white/10  transition-all duration-200"}
         >
-          Submit
+          {isLoading ? (
+            <div className="flex items-center">
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Submitting...
+            </div>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </Form>
