@@ -201,3 +201,13 @@ p {
 .absoluteCenter {
   @apply top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:right-0 lg:-translate-x-0;
 }
+
+/* If you want content scrollable but no bar visible */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

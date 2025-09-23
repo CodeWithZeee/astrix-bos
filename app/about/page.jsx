@@ -1,11 +1,40 @@
-export default function AboutPage() {
+import React from "react";
+
+const AboutUs = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "#0b0f17" }}>
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">About Us</h1>
-        <p className="text-slate-300">Learn more about our mission and vision</p>
+    <section className="py-50">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-5">
+            <span className="text-muted">Our Story</span>
+            <h2 className="display-5 fw-bold">About Us</h2>
+            <p className="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor.
+            </p>
+          </div>
+          <div className="col-md-6 offset-md-1">
+            <p className="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <p className="lead">
+              ullamco laboris nisi ut a Lorem ipsum dolor sit amet,consectetur
+              adipiscing eli ncididunt ullamco laboris nisi ut a Lorem ipsum
+              dolor sit amet,consectetur adipiscing el Lorem ipsum dolor sit
+              amet,consectetur adipiscing eli ncididunt ullamco laboris nisi ut
+              a Lorem ipsum dolor sit amet,consectetur adipiscing el.
+            </p>
+          </div>
+        </div>
       </div>
-      
-    </div>
+    </section>
   );
-}
+};
+
+export default AboutUs;
