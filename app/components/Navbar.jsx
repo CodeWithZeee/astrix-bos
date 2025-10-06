@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const currentPage = usePathname();
 
   const links = [
     { href: "/", label: "Home" },
@@ -28,21 +30,27 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-28">
-            {links.map((link) => (
-              <div
-                key={link.href}
-                className="navLinks relative group flex items-center"
-              >
-                <Link
-                  href={link.href}
-                  className="flex items-center"
-                  prefetch={true}
+            {links.map((link) => {
+              const isActive = currentPage === link.href;
+              console.log(currentPage, link.href);
+              return (
+                <div
+                  key={link.href}
+                  className={`navLinks relative group flex items-center ${
+                    isActive ? "text-green-500" : "text-gray-400"
+                  }`}
                 >
-                  {link.label}
-                </Link>
-                <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />
-              </div>
-            ))}
+                  <Link
+                    href={link.href}
+                    className="flex items-center"
+                    prefetch={true}
+                  >
+                    {link.label}
+                  </Link>
+                  <div className="absolute h-[1px] w-0 bottom-0 navLinks-underline" />
+                </div>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
