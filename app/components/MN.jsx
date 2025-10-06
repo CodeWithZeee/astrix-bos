@@ -23,7 +23,7 @@ const MN = () => {
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-100 transition-all duration-700 ease-out delay-100"></div>
           <Image
             className="relative z-10 mt-0.5"
-            src="/Noha_Avatar.png"
+            src="/Noha_Avatar.webp"
             alt="Noha Avatar"
             width={500}
             height={500}
