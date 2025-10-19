@@ -7,7 +7,7 @@ const MN = () => {
   return (
     <>
       <div className="flex items-center justify-center mt-10 sm:mt-20 md:mt-38">
-        <span className="mokoto text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
+        <span className="mokoto p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
           MEET <span className="text-green-400">NOHA:</span> YOUR{" "}
           <span className="text-green-400">AI-COPILOT</span>
         </span>
@@ -34,7 +34,7 @@ const MN = () => {
         </div>
       </section>
       <h2 className="audiowide flex justify-center items-center text-2xl text-center mb-2 mt-8">
-        With Noha, your business doesn’t just run smoother — it runs itself.
+        With Noha, your business doesn't just run smoother — it runs itself.
       </h2>
     </>
   );
