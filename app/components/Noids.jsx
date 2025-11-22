@@ -4,7 +4,7 @@ import GlassmorphismCard from "./GlassmorphismCard";
 const Noids = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center text-center mt-20 mb-6 px-4">
+      <div className="flex flex-col justify-center items-center text-center mt-20 mb-6 px-4 relative z-0">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           Meet the <span className="text-green-400">Astrix</span> Agents
         </h1>
@@ -25,7 +25,7 @@ const Noids = () => {
           <span className="text-green-400">AstrixBOS</span>
         </p>
       </div>
-      <div className="flex justify-center items-center ">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8 mb-12 relative overflow-visible">
         <GlassmorphismCard
           imageSrc="SMS.png"
           glowColor="blue"

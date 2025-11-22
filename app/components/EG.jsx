@@ -16,7 +16,7 @@ const EG = () => {
       {/* Subheading */}
       <div className="w-full flex justify-center items-center text-center px-4 pb-6">
         <h3 className="audiowide text-base sm:text-lg md:text-xl text-slate-300">
-          Set up an ENTIRE AI agent in just 3 clicks !!!
+          Set up an ENTIRE AI agent in just <span className="text-green-400">3 clicks</span> !!!
         </h3>
       </div>
 

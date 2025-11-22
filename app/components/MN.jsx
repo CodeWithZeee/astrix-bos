@@ -56,12 +56,12 @@ const MN = () => {
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-100 transition-all duration-700 ease-out delay-100"></div>
           <Image
             className="relative z-10 mt-0.5"
-            src="/Noha4.jpg"
+            src="/Noha69.png"
             alt="Noha Avatar"
             width={500}
             height={500}
           />
-          <div className="h-12 w-full flex justify-center items-center text-black text-bold group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
+          <div className="h-12 w-80 flex justify-center items-center text-black font-bold text-bold group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
             NOHA
           </div>
         </div>
