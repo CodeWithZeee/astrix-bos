@@ -1,20 +1,50 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedCardGrid from "./ui/gradient-cards";
 import Image from "next/image";
+
+const TypewriterText = ({ text, speed = 50, className = "" }) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText((prev) => prev + text[currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
+      }, speed);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, text, speed]);
+
+  return (
+    <span className={className}>
+      {displayedText}
+      {currentIndex < text.length && <span className="animate-pulse">|</span>}
+    </span>
+  );
+};
 
 const MN = () => {
   return (
     <>
-      <div className="flex items-center justify-center mt-10 sm:mt-20 md:mt-38">
-        <span className="mokoto p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
+      <div className="flex items-center justify-center mt-12 sm:mt-20 md:mt-38">
+        <span className="mokoto p-2 text-xl sm:text-2xl md:text-3xl lg:text-[44px] font-bold text-center">
           MEET <span className="text-green-400">NOHA:</span> YOUR{" "}
-          <span className="text-green-400">AI-COPILOT</span>
+          <span className="text-green-400">BUSINESS COPILOT</span>
         </span>
       </div>
-      <div className="flex items-center justify-center mt-8">
-        <h2 className="audiowide text-xl font-semibold text-center">
-          Not a bot. Not just a tool. Your true second-in-command
+      <div className="flex flex-col items-center justify-center my-4">
+        <h1>The <span className="text-green-400">intelligence layer</span> Between You and AstrixBOS</h1>
+        <br />
+        <h2 className="audiowide text-xl font-semibold text-center max-w-3xl mt-2 px-4">
+          Noha is the conversational AI that sits between you and your operating
+          system
+          <br />
+          <br />
+          Forget learning dashboards — simply talk to your business, and Noha
+          handles the rest.
         </h2>
       </div>
       <section className="flex flex-col items-center justify-center bg-[#000000] text-white">
@@ -33,9 +63,14 @@ const MN = () => {
           </div>
         </div>
       </section>
-      <h2 className="audiowide flex justify-center items-center text-2xl text-center mb-2 mt-8">
-        With Noha, your business doesn't just run smoother — it runs itself.
-      </h2>
+      <div className="flex justify-center items-center max-sm:flex-col ">
+        <h2 className="audiowide text-2xl text-center mb-2 mt-8 max-w-4xl px-4">
+          <TypewriterText
+            text="Noha analyzes every call, message, lead, task, and workflow, turning raw activity into clear, actionable business intelligence."
+            speed={30}
+          />
+        </h2>
+      </div>
     </>
   );
 };

@@ -11,8 +11,8 @@ const Navbar = () => {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/contact", label: "Contact us" },
-    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+    { href: "/about", label: "About Us" },
   ];
 
   const toggleMobileMenu = () => {

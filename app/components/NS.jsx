@@ -1,7 +1,7 @@
 import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect";
 
-const FeaturesSection = () => {
+const NS = () => {
   const features = [
     {
       title: "Smart Daily Briefing",
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-[#000000]">
+    <section className="my-20 px-4 relative overflow-hidden bg-[#000000]">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-black"></div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl animate-float"></div>
@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 
       <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 glass-card subtle-glow text-green-400 px-6 py-3 rounded-full text-sm font-medium mb-6">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -80,19 +80,24 @@ const FeaturesSection = () => {
             </svg>
           </div>
           <h2 className="font-bold text-white mb-6 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-            <span className="text-green-400">NOHA'S</span>{" "}
-            : Solutions
+            <span className="text-green-400">NOHA'S</span> Solutions
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed urbanist">
+          {/* <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed urbanist">
             Not a bot. Not just a tool. Your true second-in-command.
-          </p>
+          </p> */}
         </div>
 
         {/* Features Grid with Hover Effect */}
         <HoverEffect items={features} className="max-w-6xl mx-auto" />
+        <div className="max-w-4xl mx-auto text-center">
+          <h1>
+            Noha becomes the smartest person in your business — and the only one
+            who never sleeps
+          </h1>
+        </div>
       </div>
     </section>
   );
 };
 
-export default FeaturesSection;
+export default NS;

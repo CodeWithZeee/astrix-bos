@@ -10,27 +10,38 @@ const Landingpage = () => {
       <div className="flex flex-col items-start max-w-full sm:mt-4 mt-20 z-10 backdrop-blur-[2px] lg:max-w-1/2 text-center lg:text-left mb-8 lg:mb-0">
         <p className="mokoto text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">
           <span className="mokoto text-green-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            AstrixBOS-
+            Enterprise Grade AI
           </span>{" "}
           <br />
-          The World's First{" "}
-          <span className="mokoto text-green-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-            AI-NATIVE
-          </span>{" "}
-          Business Operating System with built-in Co-Pilot
+          {/* Enterprise Grade{" "} */}
+          {/* <span className="mokoto text-green-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+            Enterprise Grade AI 
+          </span>{" "} */}
+          for every Business
         </p>
         <br /> {/* Border */}
         <div className=" hidden lg:flex overflow-hidden border w-full border-green-400 border-dashed" />
+        <div className="audiowide text-base sm:text-lg md:text-xl leading-relaxed mt-4">
+          <span className="text-green-400">AstrixBOS</span> is the world's first
+          AI-Native Business Operating System built for SMBs
+        </div>
         <div className="audiowide text-base sm:text-lg md:text-xl leading-relaxed mt-10">
-          Co-Pilot Noha runs the backend operations so you can focus on growth
+          Automate operations, engage customers instantly and understand your
+          business like a Fortune 500 — powered by your AI Copilot Noha.
         </div>
         <br />
-        <button className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center">
-          <span className="pt-1"> Tour</span>
-          <span className="mokoto text-green-400 pt-1"> AstrixBOS </span>
-          <span className="pt-1">Platform</span>
-          <AudioLines className="h-5" />
-        </button>
+        <PopupButton
+          url="https://calendly.com/YOUR_USERNAME/YOUR_EVENT"
+          rootElement={typeof window !== "undefined" ? document.body : null}
+          trigger="click"
+        >
+          <button className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center">
+            <span className="pt-1"> Book a </span>
+            <span className="mokoto text-green-400 pt-1"> Live </span>
+            <span className="pt-1">Demo</span>
+            <AudioLines className="h-5" />
+          </button>
+        </PopupButton>
       </div>
       {/* Right Side: Lottie Animation */}
       <div className="flex justify-center items-center w-full lg:w-auto absolute absoluteCenter -z-0">

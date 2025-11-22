@@ -5,10 +5,10 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 const SpotlightSection = () => {
   const services = [
     {
-      title: "AI Voice Agents (Inbound + Outbound)",
+      title: "Copilot Noha (AI Brain)",
       description:
-        "Handle customer calls 24/7 with human-like AI voice agents that answer, follow up, and engage leads naturally.",
-      icon: "🎙️",
+        "The central intelligence layer that orchestrates all agents, interprets business data and provides actionable recommendations.",
+      icon: "",
       color: "#3b82f6",
       canvasColors: [
         [59, 130, 246],
@@ -16,10 +16,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Appointment Booking & Calendar Sync",
+      title: "External AI Agents",
       description:
-        "Automatically schedules, reschedules, and syncs meetings across calendars without the back-and-forth.",
-      icon: "📅",
+        "Voice, SMS and Email agents that handle customer interactions in real time with human-like accuracy",
+      icon: "",
       color: "#8b5cf6",
       canvasColors: [
         [139, 92, 246],
@@ -27,10 +27,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Smart CRM with Auto Updates",
+      title: "Automation Studio",
       description:
-        "Keeps your CRM always current by capturing interactions, updating contacts, and logging activities in real time..",
-      icon: "📇",
+        "A drag-and-drop workflow builder that allows users to design, test and deploy business automations without writing code.",
+      icon: "",
       color: "#06b6d4",
       canvasColors: [
         [6, 182, 212],
@@ -38,10 +38,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Workflow, Task & Team Management",
+      title: "Smart CRM ",
       description:
-        "Organize projects, assign tasks, and coordinate teams in one centralized workspace.",
-      icon: "🗂️",
+        "A dynamic, semi-automated CRM enriched by Noha and connected to all customer touchpoints.",
+      icon: "",
       color: "#10b981",
       canvasColors: [
         [16, 185, 129],
@@ -49,10 +49,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Centralized Notes, Calls & Summaries",
+      title: "Task & Workflow Manager ",
       description:
-        "Never lose context—every note, call recording, and instant summary is stored in one place.",
-      icon: "📝",
+        "A centralized hub for managing internal actions, team collaboration and project tracking with role-based access control.",
+      icon: "",
       color: "#f59e0b",
       canvasColors: [
         [245, 158, 11],
@@ -60,10 +60,10 @@ const SpotlightSection = () => {
       ],
     },
     {
-      title: "Modular Roles & Permissions",
+      title: "Insights & Analytics Hub ",
       description:
-        "Set custom access levels to ensure secure, role-based control across your organization.",
-      icon: "🔐",
+        "A unified dashboard consolidating performance metrics across agents, automations and CRM.",
+      icon: "",
       color: "#ef4444",
       canvasColors: [
         [239, 68, 68],
@@ -73,7 +73,7 @@ const SpotlightSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-[#000000]">
+    <section className="py-20 px-34 relative overflow-hidden bg-[#000000]">
       {/* Background Effects */}
       <div className="absolute inset-0  from-black-500/5 via-transparent to-green-500/5"></div>
       <div className="absolute top-32 right-20 w-40 h-40 bg-black-500/5 rounded-full blur-3xl animate-float"></div>
@@ -98,8 +98,9 @@ const SpotlightSection = () => {
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
-            What <span className="text-emerald-400">Noha</span> Can Do
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl mx-auto text-white mb-6 leading-tight text-center">
+            <span className="text-green-400">Intelligence </span> at the Core of
+            Your Business
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
             Unlock your business potential with our comprehensive suite of

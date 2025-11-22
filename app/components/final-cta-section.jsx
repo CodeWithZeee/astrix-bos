@@ -72,11 +72,10 @@ export function FinalCTASection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 sm:mb-16 lg:mb-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-sans tracking-tight px-4">
-            Invest in the Future of Service Businesses
+            Invest in the Future of Business Intelligence
           </h2>
           <p className=" text-gray-400 text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            Whether you're looking to invest, partner, or scale your business,
-            Noha is your opportunity to be ahead of the curve.
+           Whether you're looking to invest, partner, or scale, AstrixBOS is your opportunity to be ahead of the curve — helping build the AI-native operating system SMBs has the potential to be the next unicorn
           </p>
         </div>
 

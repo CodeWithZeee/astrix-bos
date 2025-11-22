@@ -17,22 +17,21 @@ import {
   Bot,
 } from "lucide-react";
 // import Section3 from "./ignore/Section3";
-import FeaturesSection from "./components/FeaturesSection";
-import HNW from "./components/HNW";
-import SpotlightSection from "./components/SpotlightSection";
+import NS from "./components/NS";
+import EG from "./components/EG";
+import SpotlightSection from "./components/Intelligence";
 import RevealAnimation from "./components/RevealAnimation";
 import { FinalCTASection } from "./components/final-cta-section";
 import Landingpage from "./components/Landingpage";
-import Problems from "./components/Problems";
 import MN from "./components/MN";
-import WNH from "./components/WNH";
+import WNH from "./components/Industries";
+import Noids from "./components/Noids";
 
 export default function Home() {
   return (
     <>
       <RevealAnimation delay={0.1}>
         <Landingpage />
-        {/* <Problems /> */}
       </RevealAnimation>
 
 
@@ -43,12 +42,17 @@ export default function Home() {
 
       {/* Features Section with Card Hover Effect */}
       <RevealAnimation delay={0.1}>
-        <FeaturesSection />
+        <NS />
+      </RevealAnimation>
+
+      {/* Noids Section */}
+      <RevealAnimation delay={0.1}>
+        <Noids />
       </RevealAnimation>
 
       {/* HNW Section with Lottie Animation */}
       <RevealAnimation delay={0.1}>
-        <HNW />
+        <EG />
       </RevealAnimation>
 
 

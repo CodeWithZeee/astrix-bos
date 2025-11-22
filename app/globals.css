@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+html , body{
+  overflow-x: hidden;
+}
+
 /* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 
-const HNW = () => {
+const EG = () => {
   return (
     <>
       {/* =======================
           HEADING (Centered)
       ======================== */}
-      <div className="w-full flex justify-center items-center gap-2 text-center px-4 pt-18 pb-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex items-center">
-          How <span className="text-green-400 mx-2">noha</span> works
+      <div className="flex justify-center items-center gap-2 text-center px-4 pt-18 pb-4">
+        <h2 className="flex flex-col coltext-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  items-center">
+           <span className="text-green-400 mx-2">Enterprise-Grade AI </span> with Zero Complexity
         </h2>
       </div>
 
@@ -77,4 +77,4 @@ const HNW = () => {
   );
 };
 
-export default HNW;
+export default EG;
