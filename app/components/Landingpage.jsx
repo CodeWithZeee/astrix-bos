@@ -57,7 +57,7 @@ const Landingpage = () => {
   return (
     <section className="flex flex-col relative lg:flex-row items-center justify-between  bg-[#000000] text-white px-4 lg:ml-16 lg:mt-65 md:mt-65 sm:mt-30 mt-7.5  max-w-full">
       {/* Left Side: Text and Button */}
-      <div className="flex flex-col items-start max-w-full sm:mt-4 mt-20 z-10 backdrop-blur-[2px] lg:max-w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+      <div className="flex flex-col items-center lg:items-start max-w-full sm:mt-4 mt-20 z-10 backdrop-blur-[2px] lg:max-w-1/2 text-center lg:text-left mb-8 lg:mb-0">
         <p className="mokoto text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">
           <span className="mokoto text-green-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             Enterprise Grade AI

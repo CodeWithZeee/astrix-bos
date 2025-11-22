@@ -4,27 +4,28 @@ import GlassmorphismCard from "./GlassmorphismCard";
 const Noids = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-20 mb-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <div className="flex flex-col justify-center items-center text-center mt-20 mb-6 px-4">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           Meet the <span className="text-green-400">Astrix</span> Agents
         </h1>
-        <h2 className="mt-4 audiowide">
+        <br />
+        <h2 className="mt-4 audiowide px-4">
           The <span className="text-green-400 font-bold">AI Workforce</span>{" "}
           Running Your Business
         </h2>
         <br />
-        <p className="max-w-3xl text-center audiowide">
+        <p className="max-w-3xl text-center audiowide px-4">
           <span className="text-green-400">AstrixBOS</span> comes with a growing
           ecosystem of intelligent agents — each designed to automate a critical
           function.
         </p>
         <br />
-        <p className="max-w-3xl text-center audiowide">
+        <p className="max-w-3xl text-center audiowide px-4">
           It takes less than 3 minutes to deploy an Agent on{" "}
           <span className="text-green-400">AstrixBOS</span>
         </p>
       </div>
-      <div className="flex justify-center items-center max-sm:flex-col ">
+      <div className="flex justify-center items-center ">
         <GlassmorphismCard
           imageSrc="SMS.png"
           glowColor="blue"

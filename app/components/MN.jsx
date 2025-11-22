@@ -30,15 +30,18 @@ const MN = () => {
   return (
     <>
       <div className="flex items-center justify-center mt-12 sm:mt-20 md:mt-38">
-        <span className="mokoto p-2 text-xl sm:text-2xl md:text-3xl lg:text-[44px] font-bold text-center">
+        <span className="mokoto p-2 text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-center">
           MEET <span className="text-green-400">NOHA</span>: YOUR{" "}
           <span className="text-green-400">BUSINESS COPILOT</span>
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center my-4">
-        <h1 className="audiowide text-2xl">The <span className="text-green-400">intelligence layer</span> Between You and AstrixBOS</h1>
+      <div className="flex flex-col items-center justify-center my-4 px-4">
+        <h1 className="audiowide text-center ">
+          The <span className="text-green-400">intelligence layer</span> Between
+          You and AstrixBOS
+        </h1>
         <br />
-        <h2 className="audiowide text-xl font-semibold text-center max-w-3xl mt-2 px-4">
+        <h2 className="audiowide  text-center max-w-3xl mt-2 px-4">
           Noha is the conversational AI that sits between you and your operating
           system
           <br />
@@ -53,7 +56,7 @@ const MN = () => {
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-100 transition-all duration-700 ease-out delay-100"></div>
           <Image
             className="relative z-10 mt-0.5"
-            src="/Noha_Avatar.webp"
+            src="/Noha4.jpg"
             alt="Noha Avatar"
             width={500}
             height={500}
@@ -64,7 +67,7 @@ const MN = () => {
         </div>
       </section>
       <div className="flex justify-center items-center max-sm:flex-col ">
-        <h2 className="audiowide text-2xl text-center mb-2 mt-8 max-w-4xl px-4">
+        <h2 className="audiowide text-xl text-center mb-2 mt-8 max-w-4xl px-4">
           <TypewriterText
             text="Noha analyzes every call, message, lead, task, and workflow, turning raw activity into clear, actionable business intelligence."
             speed={30}
