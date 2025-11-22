@@ -1,7 +1,59 @@
+"use client";
 import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect";
+import { AudioLines } from "lucide-react";
 
 const NS = () => {
+  const openCalendly = (e) => {
+    e.preventDefault();
+    const calendlyUrl = "https://calendly.com/cursoraccnt001/new-meeting";
+
+    if (typeof window !== "undefined" && window.Calendly) {
+      window.Calendly.initPopupWidget({ url: calendlyUrl });
+
+      // Fix popup positioning and add close on overlay click
+      setTimeout(() => {
+        const overlay = document.querySelector(".calendly-overlay");
+        const popupContent = document.querySelector(
+          ".calendly-popup-content, .calendly-popup-content-wrapper"
+        );
+
+        if (overlay) {
+          overlay.style.display = "flex";
+          overlay.style.alignItems = "center";
+          overlay.style.justifyContent = "center";
+
+          overlay.addEventListener("click", (e) => {
+            if (e.target === overlay && window.Calendly?.closePopupWidget) {
+              window.Calendly.closePopupWidget();
+            }
+          });
+        }
+
+        if (popupContent) {
+          popupContent.style.position = "relative";
+          popupContent.style.margin = "auto";
+          popupContent.style.width = "100%";
+          popupContent.style.minWidth = "320px";
+          popupContent.style.maxWidth = "1200px";
+          popupContent.style.maxHeight = "90vh";
+          popupContent.addEventListener("click", (e) => e.stopPropagation());
+
+          // Fix iframe sizing
+          const iframe = popupContent.querySelector("iframe");
+          if (iframe) {
+            iframe.style.width = "100%";
+            iframe.style.minWidth = "320px";
+            iframe.style.height = "630px";
+            iframe.style.minHeight = "630px";
+            iframe.style.maxHeight = "90vh";
+          }
+        }
+      }, 500);
+    } else {
+      window.open(calendlyUrl, "_blank", "noopener,noreferrer");
+    }
+  };
   const features = [
     {
       title: "Smart Daily Briefing",
@@ -18,7 +70,7 @@ const NS = () => {
     {
       title: "Calendar & Task Management",
       description:
-        "Seamlessly books, reschedules, and updates tasks across your team’s calendar—no back-and-forth emails.",
+        "Seamlessly books, reschedules, and updates tasks across your team's calendar—no back-and-forth emails.",
       link: "#pipeline",
     },
     {
@@ -90,10 +142,24 @@ const NS = () => {
         {/* Features Grid with Hover Effect */}
         <HoverEffect items={features} className="max-w-6xl mx-auto" />
         <div className="max-w-4xl mx-auto text-center">
-          <h1>
+          <h1 className="audiowide text-gray-200">
             Noha becomes the smartest person in your business — and the only one
             who never sleeps
           </h1>
+        </div>
+
+        {/* Calendly CTA Button - Centered */}
+        <div className="flex justify-center mt-12 mb-8">
+          <button
+            type="button"
+            onClick={openCalendly}
+            className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base justify-center text-white bg-transparent whitespace-nowrap"
+          >
+            <span className="pt-1"> Book a </span>
+            <span className="mokoto text-green-400 pt-1"> Live </span>
+            <span className="pt-1">Demo</span>
+            <AudioLines className="h-5 flex-shrink-0" />
+          </button>
         </div>
       </div>
     </section>

@@ -1,9 +1,59 @@
 "use client";
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import Image from "next/image";
 import { AudioLines } from "lucide-react";
+
 const Landingpage = () => {
+  const openCalendly = (e) => {
+    e.preventDefault();
+    const calendlyUrl = "https://calendly.com/cursoraccnt001/new-meeting";
+
+    if (typeof window !== "undefined" && window.Calendly) {
+      window.Calendly.initPopupWidget({ url: calendlyUrl });
+
+      // Fix popup positioning and add close on overlay click
+      setTimeout(() => {
+        const overlay = document.querySelector(".calendly-overlay");
+        const popupContent = document.querySelector(
+          ".calendly-popup-content, .calendly-popup-content-wrapper"
+        );
+
+        if (overlay) {
+          overlay.style.display = "flex";
+          overlay.style.alignItems = "center";
+          overlay.style.justifyContent = "center";
+
+          overlay.addEventListener("click", (e) => {
+            if (e.target === overlay && window.Calendly?.closePopupWidget) {
+              window.Calendly.closePopupWidget();
+            }
+          });
+        }
+
+        if (popupContent) {
+          popupContent.style.position = "relative";
+          popupContent.style.margin = "auto";
+          popupContent.style.width = "100%";
+          popupContent.style.minWidth = "320px";
+          popupContent.style.maxWidth = "1200px";
+          popupContent.style.maxHeight = "90vh";
+          popupContent.addEventListener("click", (e) => e.stopPropagation());
+
+          // Fix iframe sizing
+          const iframe = popupContent.querySelector("iframe");
+          if (iframe) {
+            iframe.style.width = "100%";
+            iframe.style.minWidth = "320px";
+            iframe.style.height = "630px";
+            iframe.style.minHeight = "630px";
+            iframe.style.maxHeight = "90vh";
+          }
+        }
+      }, 500);
+    } else {
+      window.open(calendlyUrl, "_blank", "noopener,noreferrer");
+    }
+  };
   return (
     <section className="flex flex-col relative lg:flex-row items-center justify-between  bg-[#000000] text-white px-4 lg:ml-16 lg:mt-65 md:mt-65 sm:mt-30 mt-7.5  max-w-full">
       {/* Left Side: Text and Button */}
@@ -30,18 +80,19 @@ const Landingpage = () => {
           business like a Fortune 500 — powered by your AI Copilot Noha.
         </div>
         <br />
-        <PopupButton
-          url="https://calendly.com/YOUR_USERNAME/YOUR_EVENT"
-          rootElement={typeof window !== "undefined" ? document.body : null}
-          trigger="click"
-        >
-          <button className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center">
+        {/* Calendly Popup Button */}
+        <div className="w-full lg:w-auto">
+          <button
+            type="button"
+            onClick={openCalendly}
+            className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center text-white bg-transparent whitespace-nowrap"
+          >
             <span className="pt-1"> Book a </span>
             <span className="mokoto text-green-400 pt-1"> Live </span>
             <span className="pt-1">Demo</span>
-            <AudioLines className="h-5" />
+            <AudioLines className="h-5 flex-shrink-0" />
           </button>
-        </PopupButton>
+        </div>
       </div>
       {/* Right Side: Lottie Animation */}
       <div className="flex justify-center items-center w-full lg:w-auto absolute absoluteCenter -z-0">

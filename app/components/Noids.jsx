@@ -1,14 +1,30 @@
-import React from 'react'
+import React from "react";
 import GlassmorphismCard from "./GlassmorphismCard";
 
 const Noids = () => {
   return (
     <>
-        <div className="flex flex-col justify-center items-center mt-20 mb-6">
-            <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>Meet the <span className='text-green-400'>Astrix</span> Agents</h1>
-            <h2 className='mt-4'>The <span className='text-green-400 font-bold'>AI Workforce</span> Running Your Business</h2>
-        </div>
-       <div className="flex justify-center items-center max-sm:flex-col ">
+      <div className="flex flex-col justify-center items-center mt-20 mb-6">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          Meet the <span className="text-green-400">Astrix</span> Agents
+        </h1>
+        <h2 className="mt-4 audiowide">
+          The <span className="text-green-400 font-bold">AI Workforce</span>{" "}
+          Running Your Business
+        </h2>
+        <br />
+        <p className="max-w-3xl text-center audiowide">
+          <span className="text-green-400">AstrixBOS</span> comes with a growing
+          ecosystem of intelligent agents — each designed to automate a critical
+          function.
+        </p>
+        <br />
+        <p className="max-w-3xl text-center audiowide">
+          It takes less than 3 minutes to deploy an Agent on{" "}
+          <span className="text-green-400">AstrixBOS</span>
+        </p>
+      </div>
+      <div className="flex justify-center items-center max-sm:flex-col ">
         <GlassmorphismCard
           imageSrc="SMS.png"
           glowColor="blue"
@@ -29,7 +45,7 @@ const Noids = () => {
         />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Noids
+export default Noids;

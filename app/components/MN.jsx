@@ -31,12 +31,12 @@ const MN = () => {
     <>
       <div className="flex items-center justify-center mt-12 sm:mt-20 md:mt-38">
         <span className="mokoto p-2 text-xl sm:text-2xl md:text-3xl lg:text-[44px] font-bold text-center">
-          MEET <span className="text-green-400">NOHA:</span> YOUR{" "}
+          MEET <span className="text-green-400">NOHA</span>: YOUR{" "}
           <span className="text-green-400">BUSINESS COPILOT</span>
         </span>
       </div>
       <div className="flex flex-col items-center justify-center my-4">
-        <h1>The <span className="text-green-400">intelligence layer</span> Between You and AstrixBOS</h1>
+        <h1 className="audiowide text-2xl">The <span className="text-green-400">intelligence layer</span> Between You and AstrixBOS</h1>
         <br />
         <h2 className="audiowide text-xl font-semibold text-center max-w-3xl mt-2 px-4">
           Noha is the conversational AI that sits between you and your operating
@@ -58,7 +58,7 @@ const MN = () => {
             width={500}
             height={500}
           />
-          <div className="h-12 w-full flex justify-center items-center text-black group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
+          <div className="h-12 w-full flex justify-center items-center text-black text-bold group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
             NOHA
           </div>
         </div>

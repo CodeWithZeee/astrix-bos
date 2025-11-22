@@ -129,7 +129,7 @@ export function FinalCTASection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact">
                 <Button className="transform transition-transform duration-300 ease-in-out 
-               hover:scale-110 hover:shadow-lg cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base">
+               hover:scale-110  cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base border">
                   {/* <Phone className="h-4 w-4 sm:h-5 sm:w-5 " /> */}
                   Contact Us
                 </Button>
@@ -137,7 +137,7 @@ export function FinalCTASection() {
               <Button
                 variant="outline"
                 className="transform transition-transform duration-300 ease-in-out 
-               hover:scale-110 hover:shadow-lg w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
+               hover:scale-110 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
                 onClick={() => {
                   const link = document.createElement("a");
                   link.href = "/Astrix-BOS-Technical-Documentation (1).pdf";
