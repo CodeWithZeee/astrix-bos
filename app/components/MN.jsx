@@ -58,7 +58,7 @@ const MN = () => {
         </h2>
       </div>
       <section className="flex flex-col items-center justify-center bg-[#000000] text-white">
-        <div className="relative transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-115 group">
+        <div className="relative transition delay-50 duration-300 ease-in-out hover:-translate-y-8 hover:scale-125 group">
           <div className="absolute inset-0 bg-green-400/20 rounded-full blur-3xl scale-0 group-hover:scale-110 transition-all duration-500 ease-out"></div>
           <div className="absolute inset-0 bg-green-300/30 rounded-full blur-2xl scale-0 group-hover:scale-110 transition-all duration-700 ease-out delay-100"></div>
           <Image
@@ -66,7 +66,7 @@ const MN = () => {
             src="/Noha69.png"
             alt="Noha Avatar"
             width={500}
-            height={500}
+            height={450}
           />
           <div className="h-12 w-80 flex justify-center items-center text-black font-bold text-bold group-hover:text-green-700 bg-green-400 rounded-3xl absolute bottom-0 left-1/2 transform -translate-x-1/2 text-2xl z-20 transition-colors duration-300">
             NOHA

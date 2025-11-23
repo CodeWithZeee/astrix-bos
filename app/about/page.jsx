@@ -61,12 +61,14 @@ const page = () => {
         Meet Our <span className="text-green-400">Team</span>
       </h1>
       <ActivitiesWidget />
-      <h1 className="text-5xl text-center mt-12">Mission</h1>
+      <br />
+      <h1 className="text-5xl text-green-400 text-center mt-12">Mission</h1>
       <p className="text-xl text-center max-w-4xl mt-6">
         To put enterprise-level AI Automation into the hands of every
         entrepreneur and SMB.
       </p>
-      <h1 className="text-5xl text-center mt-12">Vision</h1>
+      <br />
+      <h1 className="text-5xl text-green-400 text-center mt-12">Vision</h1>
       <p className="text-xl text-center max-w-4xl mt-6">
         To become the AI-native operating system that powers how millions of
         businesses think, operate and grow.
@@ -77,7 +79,7 @@ const page = () => {
         <button
           type="button"
           onClick={openCalendly}
-          className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base justify-center text-white bg-transparent whitespace-nowrap"
+          className="mokoto hover:scale-105 transition-all duration-150 border-dashed border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base justify-center text-white bg-transparent whitespace-nowrap"
         >
           <span className="pt-1"> Book a </span>
           <span className="mokoto text-green-400 pt-1"> Live </span>

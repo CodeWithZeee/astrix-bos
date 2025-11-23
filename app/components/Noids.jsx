@@ -42,18 +42,21 @@ const Noids = () => {
           glowColor="blue"
           title="SMS Agent"
           description="Automates two-way texting with smart, human-like replies."
+          scaleMore={true}
         />
         <GlassmorphismCard
           imageSrc="Call.png"
           glowColor="yellow"
           title="Call Agent"
           description="Handles voice calls naturally — answers, books, and follows up."
+          scaleMore={true}
         />
         <GlassmorphismCard
           imageSrc="Email.png"
           glowColor="red"
           title="Email Agent"
           description="Reads, understands, and replies to emails automatically."
+          scaleMore={true}
         />
       </div>
     </>

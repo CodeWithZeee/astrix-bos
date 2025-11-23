@@ -85,7 +85,7 @@ const Landingpage = () => {
           <button
             type="button"
             onClick={openCalendly}
-            className="mokoto hover:scale-105 transition-all duration-150 border-dotted border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center text-white bg-transparent whitespace-nowrap"
+            className="mokoto hover:scale-105 transition-all duration-150 border-dashed border-2 border-green-400 rounded-3xl p-3 sm:p-4 cursor-pointer flex items-center gap-2 text-sm sm:text-base mx-auto lg:mx-0 justify-center text-white bg-transparent whitespace-nowrap"
           >
               <span className="pt-1"> Book a </span>
               <span className="mokoto text-green-400 pt-1"> Live </span>

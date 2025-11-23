@@ -14,11 +14,12 @@ datasource db {
 }
 
 model Form {
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
-  name     String
-  email    String
-  contact  String
-  message  String
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  email       String
+  countryCode String
+  contact     String
+  message     String
 }
 
 
