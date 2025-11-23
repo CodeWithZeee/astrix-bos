@@ -136,8 +136,6 @@ const ActivitiesWidget = () => {
               display: "grid",
               gridTemplateColumns: "subgrid",
               gridTemplateRows: "subgrid",
-              position: "relative",
-              zIndex: activeActivity === index ? 10 : index + 1,
             }}
           >
             <div

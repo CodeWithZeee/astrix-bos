@@ -26,6 +26,7 @@ import Landingpage from "./components/Landingpage";
 import MN from "./components/MN";
 import WNH from "./components/Industries";
 import Noids from "./components/Noids";
+import Roadmap from "./components/Roadmap";
 
 export default function Home() {
   return (
@@ -48,6 +49,11 @@ export default function Home() {
       {/* Noids Section */}
       <RevealAnimation delay={0.1}>
         <Noids />
+      </RevealAnimation>
+
+      {/* Roadmap Section */}
+      <RevealAnimation delay={0.1}>
+        <Roadmap />
       </RevealAnimation>
 
       {/* HNW Section with Lottie Animation */}

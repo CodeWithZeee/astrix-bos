@@ -5,6 +5,17 @@ const Noids = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center text-center mt-20 mb-6 px-4 relative z-0">
+        <div className="inline-flex items-center gap-2 glass-card subtle-glow text-green-400 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-medium mb-6">
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+            <path
+              fillRule="evenodd"
+              d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+              clipRule="evenodd"
+            />
+          </svg>
+          AI Agents
+        </div>
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           Meet the <span className="text-green-400">Astrix</span> Agents
         </h1>
@@ -29,19 +40,19 @@ const Noids = () => {
         <GlassmorphismCard
           imageSrc="SMS.png"
           glowColor="blue"
-          title="SMS Noid"
+          title="SMS Agent"
           description="Automates two-way texting with smart, human-like replies."
         />
         <GlassmorphismCard
           imageSrc="Call.png"
           glowColor="yellow"
-          title="Call Noid"
+          title="Call Agent"
           description="Handles voice calls naturally — answers, books, and follows up."
         />
         <GlassmorphismCard
           imageSrc="Email.png"
           glowColor="red"
-          title="Email Noid"
+          title="Email Agent"
           description="Reads, understands, and replies to emails automatically."
         />
       </div>

@@ -82,10 +82,10 @@ const GlassmorphismCard = ({
           />
         </div>
 
+        {/* Title - fade on hover OR click (click uses inline opacity to reliably override) */}
         <h3
-          className={`text-center text-white text-lg sm:text-xl audiowide font-normal font-['Lato',sans-serif] transition-all duration-400 opacity-100 group-hover:opacity-0 relative z-10 ${
-            isActive ? "opacity-0 sm:opacity-100" : ""
-          }`}
+          className="text-center text-white text-lg sm:text-xl audiowide font-normal font-['Lato',sans-serif] transition-opacity duration-400 relative z-10 group-hover:opacity-0"
+          style={{ opacity: isActive ? 0 : undefined }}
         >
           {title}
         </h3>
