@@ -49,7 +49,7 @@ const ActivitiesWidget = () => {
   }, [isAnimating]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black p-4">
+    <div className="flex justify-center bg-black p-4 mt-10">
       <style>{`
         @keyframes straightenImages {
           50% {
