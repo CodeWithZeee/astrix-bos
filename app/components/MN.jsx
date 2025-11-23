@@ -42,11 +42,12 @@ const MN = () => {
         </h1>
         <br />
         <h2 className="audiowide  text-center max-w-3xl mt-2 px-4">
-          Noha is the conversational AI that sits between you and your operating
-          system
+          <span className="text-green-400">Noha</span> is the conversational AI
+          that sits between you and your operating system
           <br />
           <br />
-          Forget learning dashboards — simply talk to your business, and Noha
+          Forget learning dashboards — simply talk to your business, and
+          <span className="text-green-400"> Noha </span>
           handles the rest.
         </h2>
       </div>

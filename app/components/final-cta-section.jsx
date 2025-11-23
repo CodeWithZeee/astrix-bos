@@ -134,7 +134,7 @@ export function FinalCTASection() {
                   Contact Us
                 </Button>
               </Link>
-              <Button
+              {/* <Button
                 variant="outline"
                 className="transform transition-transform duration-300 ease-in-out 
                hover:scale-110 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base cursor-pointer"
@@ -149,7 +149,7 @@ export function FinalCTASection() {
               >
                 <FileText className="h-4 w-4 sm:h-5 sm:w-5 cursor-pointer" />
                 Download Brochure
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
