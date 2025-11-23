@@ -90,12 +90,12 @@ const Landingpage = () => {
               <span className="pt-1"> Book a </span>
               <span className="mokoto text-green-400 pt-1"> Live </span>
               <span className="pt-1">Demo</span>
-            <AudioLines className="h-5 flex-shrink-0" />
+            <AudioLines className="h-5 shrink-0" />
             </button>
         </div>
       </div>
       {/* Right Side: Lottie Animation */}
-      <div className="flex justify-center items-center w-full lg:w-auto absolute absoluteCenter -z-0">
+      <div className="flex justify-center items-center w-full lg:w-auto absolute absoluteCenter z-0">
         <DotLottieReact
           src="https://lottie.host/0fe466c8-fb8c-44f8-a097-4416b6074507/1vpdz9rTZY.lottie"
           loop

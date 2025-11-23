@@ -92,7 +92,7 @@ const Roadmap = () => {
               >
                 {/* Glowing background effect */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${agent.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl`}
+                  className={`absolute inset-0 bg-linear-to-br ${agent.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl`}
                 ></div>
 
                 {/* Coming Soon Badge */}
@@ -107,7 +107,7 @@ const Roadmap = () => {
                 <div className="relative z-10 mb-4">
                   <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-white/5 border border-white/10 group-hover:border-white/20 transition-all duration-300 group-hover:scale-110">
                     <div
-                      className={`absolute inset-0 rounded-xl bg-gradient-to-br ${agent.gradient} opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-300`}
+                      className={`absolute inset-0 rounded-xl bg-linear-to-br ${agent.gradient} opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-300`}
                     ></div>
                     <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-green-400 relative z-10" />
                   </div>
@@ -124,7 +124,7 @@ const Roadmap = () => {
                 {/* Subtle shine effect */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div
-                    className="absolute w-[150%] pb-[150%] rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 blur-[40px]"
+                    className="absolute w-[150%] pb-[150%] rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 blur-2xl"
                     style={{
                       backgroundImage: `radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%)`,
                     }}
@@ -136,7 +136,7 @@ const Roadmap = () => {
         </div>
 
         {/* Connecting Flow Lines (Desktop only) */}
-        <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-green-400/20 to-transparent -translate-y-1/2 pointer-events-none">
+        <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-green-400/20 to-transparent -translate-y-1/2 pointer-events-none">
           <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-green-400/40"></div>
           <div className="absolute left-1/2 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-green-400/40"></div>
           <div className="absolute left-3/4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-green-400/40"></div>

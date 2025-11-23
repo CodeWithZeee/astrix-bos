@@ -73,9 +73,9 @@ const GlassmorphismCard = ({
           <img
             src={imageSrc}
             alt={title}
-            className={`block w-full h-auto relative z-50 transition-all duration-400 group-hover:translate-x-[-20px] group-hover:translate-y-[-40px] group-hover:scale-140 ${
+            className={`block w-full h-auto relative z-50 transition-all duration-400 group-hover:translate-x-5 group-hover:translate-y-10 group-hover:scale-140 ${
               isActive
-                ? "translate-x-[-20px] translate-y-[-40px] scale-140 sm:translate-x-0 sm:translate-y-0 sm:scale-100"
+                ? "translate-x-5 translate-y-10 scale-140 sm:translate-x-0 sm:translate-y-0 sm:scale-100"
                 : ""
             }`}
             style={{ position: "relative", zIndex: 50 }}
@@ -92,7 +92,7 @@ const GlassmorphismCard = ({
 
         {/* Content - Hidden by default, shown on hover/click */}
         <div
-          className={`absolute right-4 bottom-4 left-4 text-center text-white text-xs sm:text-sm tracking-[0.1em] opacity-0 transition-all duration-400 group-hover:opacity-100 font-bold z-20 ${
+          className={`absolute right-4 bottom-4 left-4 text-center text-white text-xs sm:text-sm tracking-widest opacity-0 transition-all duration-400 group-hover:opacity-100 font-bold z-20 ${
             isActive ? "opacity-100 sm:opacity-0" : ""
           }`}
         >

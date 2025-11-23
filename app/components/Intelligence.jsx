@@ -116,7 +116,7 @@ const SpotlightSection = () => {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors duration-300 flex-grow">
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors duration-300 grow">
                     {service.description}
                   </p>
 

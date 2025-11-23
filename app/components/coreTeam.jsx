@@ -136,6 +136,7 @@ const ActivitiesWidget = () => {
               display: "grid",
               gridTemplateColumns: "subgrid",
               gridTemplateRows: "subgrid",
+              zIndex: activeActivity === index ? 1 : 0,
             }}
           >
             <div
@@ -146,7 +147,7 @@ const ActivitiesWidget = () => {
               }}
             >
               <div
-                className={`activity-img w-full aspect-square overflow-hidden rounded-lg border-4 border-white dark:border-gray-800 shadow-md ${
+                className={`activity-img w-full aspect-square overflow-hidden rounded-lg border-4 border-white shadow-md ${
                   activeActivity === index && isAnimating ? "active-img" : ""
                 }`}
                 style={{
@@ -197,14 +198,14 @@ const ActivitiesWidget = () => {
           <button
             aria-label="previous"
             onClick={handlePrevious}
-            className="border border-black dark:border-white bg-transparent rounded-full w-8 h-8 aspect-square hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+            className="border-2 border-white bg-transparent rounded-full w-8 h-8 aspect-square hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
           >
             ⭠
           </button>
           <button
             aria-label="next"
             onClick={handleNext}
-            className="border border-black dark:border-white bg-transparent rounded-full w-8 h-8 aspect-square hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+            className="border-2 border-white bg-transparent rounded-full w-8 h-8 aspect-square hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
           >
             ⭢
           </button>
