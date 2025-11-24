@@ -23,7 +23,7 @@ const page = () => {
           overlay.style.alignItems = "center";
           overlay.style.justifyContent = "center";
 
-          overlay.addEventListener("click", (e) => {
+          overlay?.addEventListener("click", (e) => {
             if (e.target === overlay && window.Calendly?.closePopupWidget) {
               window.Calendly.closePopupWidget();
             }
@@ -37,10 +37,10 @@ const page = () => {
           popupContent.style.minWidth = "320px";
           popupContent.style.maxWidth = "1200px";
           popupContent.style.maxHeight = "90vh";
-          popupContent.addEventListener("click", (e) => e.stopPropagation());
+          popupContent?.addEventListener("click", (e) => e.stopPropagation());
 
           // Fix iframe sizing
-          const iframe = popupContent.querySelector("iframe");
+          const iframe = popupContent?.querySelector("iframe");
           if (iframe) {
             iframe.style.width = "100%";
             iframe.style.minWidth = "320px";
